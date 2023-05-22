@@ -181,7 +181,7 @@ export default function Post({ post, posts, preview }) {
 
       <Section>
         <Container className="spacing">
-          <Wrapper>
+          {/* <Wrapper>
             <Aside className="spacing">
               <Navigation className="spacing">
                 <h3 className="caps accent title bold">
@@ -374,8 +374,8 @@ export default function Post({ post, posts, preview }) {
                 )}
               </BlogArticle>
             </Content>
-          </Wrapper>
-          {/* <>
+          </Wrapper> */}
+          <>
             <article>
               <Head>
                 <title>
@@ -401,7 +401,7 @@ export default function Post({ post, posts, preview }) {
 
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          </> */}
+          </>
         </Container>
       </Section>
     </LayoutJs>
