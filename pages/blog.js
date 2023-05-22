@@ -45,6 +45,10 @@ const Article = styled.article`
   }
 `;
 
+const Ol = styled.ol`
+  list-style-type: none;
+`;
+
 const Text = styled.div`
   padding: 2em;
 
@@ -102,6 +106,10 @@ const BannerText = styled.div`
   text-align: center;
 `;
 
+const Excerpt = styled.div`
+  font-size: var(--fs-sm);
+`;
+
 const BannerBottomText = styled.div`
   grid-row: 2 / -1;
   grid-column: 1 / -1;
@@ -147,7 +155,7 @@ export default function Blog({ posts, pagination }) {
       </BannerGrid>
       <Section>
         <Container>
-          <ul>
+          <Ol>
             {posts.map((post) => {
               return (
                 <li key={post.slug}>
@@ -174,17 +182,16 @@ export default function Blog({ posts, pagination }) {
                             {post.title}
                           </Link>
                         </h2>
-                        <small>{post.date}</small>
+                        <Excerpt
+                          dangerouslySetInnerHTML={{ __html: post.excerpt }}
+                        />
                       </header>
-                      {/* <section itemProp="description">
-                          {parse(post.excerpt)}
-                        </section> */}
                     </Text>
                   </Article>
                 </li>
               );
             })}
-          </ul>
+          </Ol>
         </Container>
       </Section>
     </LayoutJs>
