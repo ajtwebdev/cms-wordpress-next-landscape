@@ -349,7 +349,9 @@ export default function Post({ post, posts, preview }) {
             <Content className="spacing">
               <div>
                 <p className="caps bold">from the landscaping experts</p>
-                <h1 className="title accent bold italics">{post.title}</h1>
+                {post.title ? (
+                  <h1 className="title accent bold italics">{post.title}</h1>
+                ) : null}
               </div>
               <BlogArticle className="blog-post">
                 <Head>
