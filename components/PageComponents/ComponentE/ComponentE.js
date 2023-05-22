@@ -23,7 +23,13 @@ const Item = styled.div`
   border: 3px solid var(--clr-tan);
   border-radius: var(--br);
 
-  div {
+  figure {
+    div {
+      img {
+        height: 300px;
+        object-fit: cover;
+      }
+    }
   }
 `;
 

@@ -5,6 +5,7 @@ import PageComponents from "lib/pageComponents";
 import { getPageByUri, getAllPages, getBreadcrumbsByUri } from "lib/pages";
 import LayoutJs from "../../components/layoutJs";
 import Seo from "../../components/seo";
+import styled from "styled-components";
 
 export default function Page({ page }) {
   const {

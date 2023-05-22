@@ -1,9 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import { ButtonPrimary, ButtonSecondaryLight } from "components/buttons"
-import { Actions, Container, HeroBannerPadding } from "components/layoutComponents"
-import "bootstrap/dist/css/bootstrap.min.css"
-import { Carousel } from "react-bootstrap"
+import React from "react";
+import styled from "styled-components";
+import { ButtonPrimary, ButtonSecondaryLight } from "components/buttons";
+import {
+  Actions,
+  Container,
+  HeroBannerPadding,
+} from "components/layoutComponents";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Carousel } from "react-bootstrap";
 
 const Wrapper = styled.div`
   padding-bottom: 4em;
@@ -14,18 +18,29 @@ const Wrapper = styled.div`
   .carousel-indicators {
     margin-bottom: 4rem;
   }
-`
+`;
 
 const HeroGrid = styled.div`
   display: grid;
   grid-template-rows: auto 4em auto;
-`
+`;
 
 const HeroWrapper = styled.div`
   grid-row: 1 / span 2;
   grid-column: 1 / -1;
   z-index: 1;
-`
+`;
+
+const HeroBottomText = styled.div`
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+  z-index: 2;
+
+  background: var(--clr-dark);
+  color: var(--txt-light);
+  padding: 2em;
+  width: 80%;
+`;
 
 const Content = styled.div`
   position: relative;
@@ -39,7 +54,7 @@ const Content = styled.div`
     bottom: 0;
     left: 0;
   }
-`
+`;
 
 const Content1 = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"),
@@ -49,7 +64,7 @@ const Content1 = styled.div`
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
-`
+`;
 const Content2 = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-3.webp"),
     rgba(0, 0, 0, 0.4);
@@ -58,7 +73,7 @@ const Content2 = styled.div`
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
-`
+`;
 const Content3 = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-1.webp"),
     rgba(0, 0, 0, 0.4);
@@ -67,7 +82,7 @@ const Content3 = styled.div`
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
-`
+`;
 
 const captionStyle = {
   textAlign: "left",
@@ -76,7 +91,7 @@ const captionStyle = {
   height: "90%",
   left: "12%",
   color: "var(--txt-light)",
-}
+};
 
 export default function HeroSlider({ title }) {
   return (
@@ -124,7 +139,19 @@ export default function HeroSlider({ title }) {
             </Carousel.Item>
           </Carousel>
         </HeroWrapper>
+        <HeroBottomText>
+          <Container>
+            <p>
+              If you're in search of a Calgary deck builder near you, look no
+              further than Project Landscape. We offer a wide range of colors,
+              styles and maintenance free options to enhance the aesthetic
+              appeal of your deck. Let Project Landscape help you build the
+              outdoor living space of your dreams!
+            </p>
+          </Container>
+        </HeroBottomText>
+        ;
       </HeroGrid>
     </Wrapper>
-  )
+  );
 }

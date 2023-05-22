@@ -31,7 +31,14 @@ const Text = styled.div`
 const Item = styled.div`
   text-align: center;
 
-  div {
+  figure {
+    img {
+      height: 250px;
+      width: 250px;
+      object-fit: cover;
+      border: 2px solid var(--clr-accent);
+      border-radius: 1000px;
+    }
   }
 
   p {
@@ -41,6 +48,13 @@ const Item = styled.div`
 
 const Inner = styled.div`
   padding: 1em;
+  div {
+    p {
+      a {
+        color: var(--txt-light);
+      }
+    }
+  }
 `;
 
 const Img = styled.div`

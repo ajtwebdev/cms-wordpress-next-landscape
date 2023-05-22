@@ -13,6 +13,15 @@ const BenefitItem = styled.div`
   border: 2px solid var(--clr-tan);
   padding: 2em;
   border-radius: var(--br);
+
+  figure {
+    div {
+      img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 `;
 
 export default function Benefits1({ subheader, title, benefitContent }) {

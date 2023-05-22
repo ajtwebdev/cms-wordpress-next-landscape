@@ -1,10 +1,10 @@
-import React from "react"
-import { Container, Section } from "components/layoutComponents"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import styled from "styled-components"
-import Image from "components/Image"
+import React from "react";
+import { Container, Section } from "components/layoutComponents";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import styled from "styled-components";
+import Image from "components/Image";
 
 const Text = styled.div`
   text-align: center;
@@ -12,7 +12,7 @@ const Text = styled.div`
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-`
+`;
 
 const SliderWrapper = styled.div`
   .slick-prev:before,
@@ -27,17 +27,23 @@ const SliderWrapper = styled.div`
       width: 30px;
     }
   }
-`
+`;
 
 const SliderItem = styled.div`
-  div {
-   
+  figure {
+    div {
+      img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
   }
-`
+`;
 
 const Inner = styled.div`
- padding: 2em;
-`
+  padding: 2em;
+`;
 
 // const StyledImg = styled(GatsbyImage)`
 //   height: 450px;
@@ -46,9 +52,9 @@ const Inner = styled.div`
 // `
 
 export default function Carousel({ subheader, title, carouselContent }) {
-    let width = '100%';
-    let height = '450px';
-    
+  let width = "100%";
+  let height = "450px";
+
   const settings = {
     dots: true,
     infinite: true,
@@ -80,7 +86,7 @@ export default function Carousel({ subheader, title, carouselContent }) {
         },
       },
     ],
-  }
+  };
   return (
     <Section>
       <Container>
@@ -92,10 +98,16 @@ export default function Carousel({ subheader, title, carouselContent }) {
         </Text>
         <SliderWrapper>
           <Slider {...settings}>
-            {carouselContent.map(item => {
+            {carouselContent.map((item) => {
               return (
                 <SliderItem>
-                  <Image alt={item.image.altText || ''} srcSet={item.image.srcSet} src={item.image.src} width={width} height={height} />
+                  <Image
+                    alt={item.image.altText || ""}
+                    srcSet={item.image.srcSet}
+                    src={item.image.src}
+                    width={width}
+                    height={height}
+                  />
                   <Inner>
                     {item.title ? (
                       <h3 className="subheader ">{item.title}</h3>
@@ -109,11 +121,11 @@ export default function Carousel({ subheader, title, carouselContent }) {
                     ) : null}
                   </Inner>
                 </SliderItem>
-              )
+              );
             })}
           </Slider>
         </SliderWrapper>
       </Container>
     </Section>
-  )
+  );
 }

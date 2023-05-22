@@ -11,7 +11,16 @@ const Text = styled.div``;
 // `
 
 const Img = styled.div`
-  box-shadow: 20px 20px 0px 1px var(--clr-accent);
+  figure {
+    div {
+      box-shadow: 20px 20px 0px 1px var(--clr-accent);
+      img {
+        max-height: 600px;
+        min-height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
 `;
 
 export default function ImageRight({

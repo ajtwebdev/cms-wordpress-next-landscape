@@ -19,6 +19,15 @@ const Text = styled.div`
 
 const Img = styled.div`
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 52%, 0% 0%);
+  figure {
+    div {
+      img {
+        height: 100%;
+        max-height: 600px;
+        object-fit: cover;
+      }
+    }
+  }
 `;
 
 export default function Cta1({ subheader, title, body, image }) {

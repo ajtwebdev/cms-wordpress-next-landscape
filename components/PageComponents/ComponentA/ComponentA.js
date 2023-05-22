@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Section } from "components/layoutComponents";
-import Image from "next/image";
+import Image from "../../Image";
 
 const device = {
   md: "48em",
@@ -53,7 +53,12 @@ const Item = styled.div`
   color: var(--txt-light);
   text-decoration: none;
 
-  div {
+  figure {
+    img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 `;
 
@@ -67,6 +72,14 @@ const Inner = styled.div`
     margin-bottom: 4px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  div {
+    p {
+      a {
+        color: var(--txt-light);
+      }
+    }
   }
 `;
 
@@ -119,11 +132,12 @@ export default function ComponentA({ subheader, title, body, componentItems }) {
                 <Item>
                   <Image
                     alt={item.image.altText || ""}
-                    // srcSet={item.image.srcSet}
-                    src={item.image.sourceUrl}
+                    srcSet={item.image.srcSet}
+                    src={item.image.src}
                     width={width}
                     height={height}
                   />
+
                   <Inner>
                     <h3 className="subheader tan">{item.title}</h3>
                     {item.text ? (

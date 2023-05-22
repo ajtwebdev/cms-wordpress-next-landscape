@@ -48,7 +48,12 @@ const Item = styled.div`
   color: var(--txt-light);
   text-decoration: none;
 
-  div {
+  figure {
+    img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 `;
 
@@ -62,6 +67,13 @@ const Inner = styled.div`
     margin-bottom: 4px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  div {
+    p {
+      a {
+        color: var(--txt-light);
+      }
+    }
   }
 `;
 
