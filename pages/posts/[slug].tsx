@@ -163,7 +163,8 @@ export default function Post({ post, posts, preview }) {
   return (
     <LayoutJs>
       <HeroBannerPadding />
-      {post.featuredImage ? (
+      <HeroBannerPadding />
+      {/* {post.featuredImage ? (
         <BannerGrid>
           <BannerWrapper img={post.featuredImage?.node.sourceUrl}>
             <Container className="spacing">
@@ -176,7 +177,7 @@ export default function Post({ post, posts, preview }) {
             </Container>
           </BannerWrapper>
         </BannerGrid>
-      ) : null}
+      ) : null} */}
 
       <Section>
         <Container className="spacing">
