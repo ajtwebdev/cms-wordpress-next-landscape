@@ -1,0 +1,22 @@
+@import "styles/settings/__settings";
+
+.image {
+  div {
+    overflow: hidden;
+    margin: 0;
+  }
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.img-left {
+  box-shadow: -20px 20px 0px 1px var(--clr-accent);
+}
