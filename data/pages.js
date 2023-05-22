@@ -212,6 +212,17 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             answer
           }
         }
+        ... on Page_Pagecomponents_PageComponents_FaqTab {
+          __typename
+          title
+          tabsContent {
+            tabLabel
+            questions {
+              question
+              answer
+            }
+          }
+        }
         ... on Page_Pagecomponents_PageComponents_ProcessA {
           __typename
           description
