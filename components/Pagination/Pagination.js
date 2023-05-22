@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import config from "../../../package.json";
+import config from "../../package.json";
 import { Helmet } from "react-helmet";
 
 import { GrPrevious as PreviousIcon, GrNext as NextIcon } from "react-icons/gr";
@@ -70,7 +70,7 @@ const Pagination = ({
         aria-label="Pagination Navigation"
       >
         {hasPreviousPage && (
-          <Link href={`${path}${currentPage - 1}`}>
+          <Link legacyBehavior href={`${path}${currentPage - 1}`}>
             <a className={styles.prev} aria-label="Goto Previous Page">
               <PreviousIcon /> Previous
             </a>
@@ -99,7 +99,7 @@ const Pagination = ({
               </li>
             ) : (
               <li key={page}>
-                <Link href={`${path}${page}`}>
+                <Link legacyBehavior href={`${path}${page}`}>
                   <a aria-label={`Goto Page ${page}`}>
                     <span>{page}</span>
                   </a>
@@ -119,7 +119,7 @@ const Pagination = ({
         </ul>
 
         {hasNextPage && (
-          <Link href={`${path}${currentPage + 1}`}>
+          <Link legacyBehavior href={`${path}${currentPage + 1}`}>
             <a className={styles.next} aria-label="Goto Next Page">
               Next <NextIcon />
             </a>

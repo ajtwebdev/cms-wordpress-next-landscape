@@ -14,6 +14,7 @@ import { postPathBySlug, sanitizeExcerpt } from "lib/posts";
 import useSite from "hooks/use-site";
 import { WebsiteJsonLd } from "lib/json-ld";
 import Seo from "../components/seo";
+import Pagination from "components/Pagination";
 
 const device = {
   md: "48em",
@@ -199,6 +200,14 @@ export default function Blog({ posts, pagination }) {
               );
             })}
           </Ol>
+          {pagination && (
+            <Pagination
+              addCanonical={false}
+              currentPage={pagination?.currentPage}
+              pagesCount={pagination?.pagesCount}
+              basePath={pagination?.basePath}
+            />
+          )}
         </Container>
       </Section>
     </LayoutJs>
