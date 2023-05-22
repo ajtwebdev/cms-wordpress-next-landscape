@@ -120,7 +120,7 @@ export default function ComponentA({ subheader, title, body, componentItems }) {
                   <Image
                     alt={item.image.altText || ""}
                     // srcSet={item.image.srcSet}
-                    src={item.image.src}
+                    src={item.image.sourceUrl}
                     width={width}
                     height={height}
                   />
