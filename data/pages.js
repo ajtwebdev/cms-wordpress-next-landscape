@@ -250,6 +250,11 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           content1
           content2
         }
+        ... on Page_Pagecomponents_PageComponents_SeoPage {
+          __typename
+          title
+          description
+        }
         ... on Page_Pagecomponents_PageComponents_TabsSide {
           __typename
           title
