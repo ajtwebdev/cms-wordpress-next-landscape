@@ -355,7 +355,12 @@ export default function Post({ post, posts, preview }) {
               </div>
               <BlogArticle className="blog-post">
                 <Head>
-                  <title>{post.title}</title>
+                  {post.title ? (
+                    <title>{post.title}</title>
+                  ) : (
+                    <title>Project Landscape Ltd.</title>
+                  )}
+
                   <meta
                     property="og:image"
                     content={post.featuredImage?.node.sourceUrl}
