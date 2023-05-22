@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Section } from "components/layoutComponents";
-import Image from "components/Image";
+import Image from "next/Image";
 
 const device = {
   md: "48em",
@@ -120,7 +120,7 @@ export default function ComponentA({ subheader, title, body, componentItems }) {
                   <Image
                     alt={item.image.altText || ""}
                     srcSet={item.image.srcSet}
-                    src={item.image.src}
+                    src={item.image.sourceUrl}
                     width={width}
                     height={height}
                   />
