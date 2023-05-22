@@ -119,8 +119,8 @@ export default function ComponentA({ subheader, title, body, componentItems }) {
                 <Item>
                   <Image
                     alt={item.image.altText || ""}
-                    srcSet={item.image.srcSet}
-                    src={item.image.sourceUrl}
+                    // srcSet={item.image.srcSet}
+                    src={item.image.src}
                     width={width}
                     height={height}
                   />
