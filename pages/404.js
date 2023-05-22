@@ -1,5 +1,5 @@
-import LayoutJs from "components/LayoutJs";
-import { Section, Container } from "components/layoutComponents";
+import LayoutJs from "../components/layoutJs";
+import { Section, Container } from "../components/layoutComponents";
 
 export default function Custom404() {
   return (
