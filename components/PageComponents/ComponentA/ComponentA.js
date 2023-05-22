@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Section } from "components/layoutComponents";
-import Image from "next/Image";
+import Image from "next/image";
 
 const device = {
   md: "48em",
