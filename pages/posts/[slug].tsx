@@ -19,7 +19,6 @@ import { ButtonPrimary } from "../../components/buttons"
 import styled from "styled-components"
 import Link from "next/link"
 import ServiceForm from "../../components/Forms/ServiceForm"
-import parse from "html-react-parser"
 
 const BlogArticle = styled.article`
   h1,
