@@ -11,7 +11,6 @@ import styled from "styled-components";
 import { ButtonPrimary } from "/components/buttons";
 import Image from "components/Image";
 import { postPathBySlug, sanitizeExcerpt } from "lib/posts";
-import Pagination from "components/Pagination";
 
 const device = {
   md: "48em",
