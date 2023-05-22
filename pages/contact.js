@@ -2,11 +2,17 @@ import React from "react";
 import ContactBanner from "../components/banners/contactBanner";
 import FormContact from "../components/Forms/FormContact";
 import LayoutJs from "../components/layoutJs";
+import Seo from "../components/seo";
+
 import PortfolioBanner from "../components/portfolioBanner";
 
 export default function Contact() {
   return (
     <LayoutJs>
+      <Seo
+        title="Contact Us - Call Your Professional Landscapers in Calgary"
+        description="Project Landscape is happy to offer you year-round landscaping services, from lawn care to snow removal. Contact us today to schedule your services."
+      />
       <ContactBanner
         img="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/banner-image-1.png"
         title="you've made contact!"

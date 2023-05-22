@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import PageComponents from "lib/pageComponents";
 import { getPageByUri, getAllPages, getBreadcrumbsByUri } from "lib/pages";
 import LayoutJs from "../../components/layoutJs";
+import Seo from "../../components/seo";
 
 export default function Page({ page }) {
   const {
@@ -22,6 +23,7 @@ export default function Page({ page }) {
 
   return (
     <LayoutJs>
+      <Seo title={title} description="" />
       <div>
         {/* Iterate over ACF flexible fields and pass props to imported component */}
         {hasFlexibleFields && (

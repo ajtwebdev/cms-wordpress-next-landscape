@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/banners/banner";
 import LayoutJs from "../components/layoutJs";
 import WarrantyForm from "../components/Forms/WarrantyForm";
+import Seo from "../components/seo";
 
 import {
   Accordion,
@@ -40,6 +41,10 @@ const AccordionStyle = {
 export default function WarrantyRequest() {
   return (
     <LayoutJs>
+      <Seo
+        title="Warranty Request for Landscaping | Project Landscape Ltd."
+        description="Here you can request your warranty."
+      />
       <Banner
         img="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/banner-image-1.png"
         title="Project landscape warranty request form"

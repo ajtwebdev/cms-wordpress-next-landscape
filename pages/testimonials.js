@@ -5,6 +5,7 @@ import { Container, GridThree, Section } from "../components/layoutComponents";
 import { FaStar, FaGoogle } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import Banner from "../components/banners/banner";
+import Seo from "../components/seo";
 
 const Text = styled.div`
   max-width: 70ch;
@@ -77,6 +78,10 @@ const Review = (props) => {
 export default function Reviews() {
   return (
     <LayoutJs>
+      <Seo
+        title="Landscape Testimonials | Project Landscape"
+        description="Project Landscape was a wonderful choice of our landscaping project. It’s a new build and we love the result of from nothing to a beautiful front and back yard."
+      />
       <Banner
         img="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-3.webp"
         title="customer testimonials"

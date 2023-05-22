@@ -4,6 +4,7 @@ import LayoutJs from "../components/layoutJs";
 import ReferForm from "../components/Forms/ReferForm";
 import StepsToRefer from "../components/Sections/stepsToRefer";
 import MainTestimonials from "../components/testimonials/mainTestimonials";
+import Seo from "../components/seo";
 
 import {
   Accordion,
@@ -43,6 +44,10 @@ const AccordionStyle = {
 export default function ReferFriend() {
   return (
     <LayoutJs>
+      <Seo
+        title="Refer a Friend | Project Landscape Ltd."
+        description="Refer a friend to project landscape and get $100 off!"
+      />
       <Banner
         img="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-1.webp"
         title="invite your friends or family to our Calgary landscape refer a friend program"

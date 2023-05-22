@@ -39,7 +39,7 @@ export default function FinanceBanner() {
           </p>
           <ButtonPrimary href="/financing">view payment plans</ButtonPrimary>
           <Image
-            class="finance-img"
+            className="finance-img"
             src="/finance-it.jpg"
             alt="affordable calgary landscaping financing"
             width={100}

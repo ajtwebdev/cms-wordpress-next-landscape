@@ -19,6 +19,8 @@ import Ebook from "../components/ebook";
 import MainTestimonials from "../components/testimonials/mainTestimonials";
 import Videos from "../components/videos";
 import FaqFeatured from "../components/faq/faqFeatured";
+import { Helmet } from "react-helmet";
+import Seo from "../components/seo";
 
 const Wrapper = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hardscaping-slider.webp"),
@@ -43,6 +45,10 @@ const Divider = styled.div`
 export default function Index() {
   return (
     <LayoutJs>
+      <Seo
+        title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
+        description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
+      />
       <HeroSlider />
       <Badges />
       <MainServicesLinks />

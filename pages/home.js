@@ -40,7 +40,7 @@ const Divider = styled.div`
   
 `;
 
-export default function Index() {
+export default function Home() {
   return (
     <LayoutJs>
       <HeroSlider />

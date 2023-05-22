@@ -11,6 +11,9 @@ import styled from "styled-components";
 import { ButtonPrimary } from "/components/buttons";
 import Image from "components/Image";
 import { postPathBySlug, sanitizeExcerpt } from "lib/posts";
+import useSite from "hooks/use-site";
+import { WebsiteJsonLd } from "lib/json-ld";
+import Seo from "../components/seo";
 
 const device = {
   md: "48em",
@@ -124,6 +127,10 @@ const BannerBottomText = styled.div`
 export default function Blog({ posts, pagination }) {
   return (
     <LayoutJs>
+      <Seo
+        title="Landscaping Blog - Insights From Calgary's Landscaping Company"
+        description="With more than two decades of experience, you can trust Project Landscape to provide you with the best landscaping advice."
+      />
       <HeroBannerPadding />
       <BannerGrid>
         <BannerWrapper>

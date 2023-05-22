@@ -375,7 +375,7 @@ export default function Post({ post, posts, preview }) {
               </BlogArticle>
             </Content>
           </Wrapper> */}
-          <>
+          {/* <>
             <article>
               <Head>
                 <title>
@@ -401,7 +401,7 @@ export default function Post({ post, posts, preview }) {
 
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          </>
+          </> */}
         </Container>
       </Section>
     </LayoutJs>
