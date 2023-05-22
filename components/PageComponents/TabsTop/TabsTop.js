@@ -5,27 +5,32 @@ import styled from "styled-components";
 import Image from "../../Image";
 
 const Wrapper = styled.div`
-  .css-1xhq01z {
+  .css-k008qs {
     @media screen and (max-width: 800px) {
       display: flex;
       flex-direction: column;
     }
   }
 
-  .css-52dxnr {
+  .css-5wl5ud {
     font-family: var(--ff-alfa);
     font-size: var(--fs-sm);
     font-weight: var(--fw-button);
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    background: var(--clr-light);
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
   }
-  .css-52dxnr[aria-selected="true"],
-  .css-52dxnr[data-selected] {
-    --tabs-color: var(--clr-tan);
+  .css-5wl5ud[aria-selected="true"],
+  .css-5wl5ud[data-selected] {
+    color: var(--clr-tan);
     border-color: currentcolor;
+    border-bottom: 3px solid var(--clr-tan);
   }
 
-  css-13o7eu2 {
+  css-0 {
     padding: 2em;
     border: 1px solid var(--clr-tan);
     border-radius: var(--br);

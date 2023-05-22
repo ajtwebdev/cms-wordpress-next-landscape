@@ -13,25 +13,30 @@ import styled from "styled-components";
 import { ButtonPrimary, ButtonSecondaryLight } from "../../buttons";
 
 const Wrapper = styled.div`
-  .css-1xhq01z {
+  .css-k008qs {
     justify-content: center;
     flex-direction: column;
   }
 
-  .css-52dxnr {
+  .css-5wl5ud {
     font-family: var(--ff-alfa);
     font-size: var(--fs-sm);
     font-weight: var(--fw-button);
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    background: var(--clr-light);
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
   }
-  .css-52dxnr[aria-selected="true"],
-  .css-52dxnr[data-selected] {
-    --tabs-color: var(--clr-tan);
+  .css-5wl5ud[aria-selected="true"],
+  .css-5wl5ud[data-selected] {
+    color: var(--clr-tan);
     border-color: currentcolor;
+    border-bottom: 3px solid var(--clr-tan);
   }
 
-  css-13o7eu2 {
+  css-0 {
     padding: 2em;
     border: 1px solid var(--clr-tan);
     border-radius: var(--br);
@@ -47,7 +52,7 @@ const TabWrapper = styled.div`
   padding: 2em;
   border: 3px solid var(--clr-tan);
   border-radius: var(--br);
-  .css-13o7eu2 {
+  .css-0 {
     display: flex;
 
     @media screen and (max-width: 1000px) {
@@ -58,8 +63,11 @@ const TabWrapper = styled.div`
 `;
 
 const AccordionStyle = {
+  background: "var(--clr-accent)",
   borderRadius: "var(--br)",
+  color: "var(--txt-light)",
   border: "none",
+  padding: "3px",
 };
 
 export default function FaqTab({ tabsContent, title }) {
@@ -85,7 +93,7 @@ export default function FaqTab({ tabsContent, title }) {
                           return (
                             <AccordionItem style={AccordionStyle}>
                               <h2>
-                                <AccordionButton>
+                                <AccordionButton style={AccordionStyle}>
                                   <Box
                                     className="subheader"
                                     as="span"
