@@ -141,7 +141,7 @@ export default function MainServicesLinks() {
                 alt="outdoor landscaping services calgary"
               />
               <div>
-                <h3 className="subheader">outdoor services</h3>
+                <h3 className="subheader">outdoor living</h3>
                 <ButtonUnderline
                   className="service-button"
                   href="/residential-services/outdoor-living"

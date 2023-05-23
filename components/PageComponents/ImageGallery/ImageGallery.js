@@ -24,10 +24,16 @@ const Grid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
   grid-gap: 2em;
 
-  .img {
-    object-fit: cover;
-    border-radius: 10000px;
-    border: 2px solid var(--clr-accent);
+  figure {
+    div {
+      img {
+        object-fit: cover;
+        border-radius: 10000px;
+        border: 2px solid var(--clr-accent);
+        width: 250px;
+        height: 250px;
+      }
+    }
   }
 `;
 
@@ -55,7 +61,6 @@ export default function ImageGallery({ subheader, title, body, imageGallery }) {
             {imageGallery.map((image) => {
               return (
                 <Image
-                  className="img"
                   alt={image.altText || ""}
                   srcSet={image.srcSet}
                   src={image.src}

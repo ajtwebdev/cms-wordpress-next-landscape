@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import styled from "styled-components";
 
 const ImgStyle = {
   marginTop: "auto",
@@ -11,6 +12,18 @@ const ImgStyle = {
   height: "100px",
   width: "100%",
 };
+
+const Wrapper = styled.div`
+  .slick-list {
+    div {
+      img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+`;
 
 export default function Badges({ title }) {
   const settings = {
@@ -25,7 +38,7 @@ export default function Badges({ title }) {
   };
   return (
     <Section>
-      <div className="spacing">
+      <Wrapper className="spacing">
         {title ? <h2 className="title center">{title}</h2> : null}
         <Slider {...settings}>
           <Image
@@ -148,7 +161,7 @@ export default function Badges({ title }) {
             height={100}
           />
         </Slider>
-      </div>
+      </Wrapper>
     </Section>
   );
 }
