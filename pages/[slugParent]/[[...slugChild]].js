@@ -6,8 +6,16 @@ import { getPageByUri, getAllPages, getBreadcrumbsByUri } from "lib/pages";
 import LayoutJs from "../../components/layoutJs";
 import Seo from "../../components/seo";
 import styled from "styled-components";
+import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
+import PostPage from '../../components/blogPage'
 
-export default function Page({ page }) {
+export default function Page(props) {
+  const { page,post } = props;
+
+  if(post){
+    return <PostPage {...props} />
+  }
+
   const {
     title,
     metaTitle,
@@ -48,7 +56,11 @@ export default function Page({ page }) {
   );
 }
 
-export async function getStaticProps({ params = {} } = {}) {
+export async function getStaticProps({
+  params = {},
+  preview = false,
+  previewData,
+} = {}) {
   const { slugParent, slugChild } = params;
 
   // We can use the URI to look up our page and subsequently its ID, so
@@ -66,9 +78,30 @@ export async function getStaticProps({ params = {} } = {}) {
   const { page } = await getPageByUri(pageUri);
 
   if (!page) {
+    const allPosts = await getAllPostsWithSlug();
+
+    const isBlog = allPosts.edges.find(
+      ({ node }) => node.slug === slugChild[0]
+    );
+    if (!isBlog) {
+      return {
+        props: {},
+        notFound: true,
+      };
+    }
+
+    const data = await getPostAndMorePosts(
+      params?.slugChild[0],
+      preview,
+      previewData
+    );
+
     return {
-      props: {},
-      notFound: true,
+      props: {
+        preview,
+        post: data.post,
+        posts: data.posts,
+      },
     };
   }
 
@@ -116,8 +149,15 @@ export async function getStaticPaths() {
       };
     });
 
+  const allPosts = await getAllPostsWithSlug();
+  const allPostsPaths = allPosts.edges.flatMap(({ node }) =>
+    node.categories.edges.map(({ node: categoryNode }) => ({
+      params: { slugParent: categoryNode.slug, slugChild: [node.slug] },
+    }))
+  );
+
   return {
-    paths,
+    paths: [...paths, ...allPostsPaths],
     fallback: "blocking",
   };
 }
