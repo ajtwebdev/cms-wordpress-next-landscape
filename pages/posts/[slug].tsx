@@ -346,15 +346,15 @@ export default function Post({ post, posts, preview }) {
                 <ServiceForm />
               </div>
             </Aside>
-            <Content className="spacing">
-              {/* <div>
+            {/* <Content className="spacing">
+              <div>
                 <p className="caps bold">from the landscaping experts</p>
                 {post.title ? (
                   <h1 className="title accent bold italics">{post.title}</h1>
                 ) : null}
-              </div> */}
+              </div>
               <BlogArticle className="blog-post">
-                {/* <Head>
+                <Head>
                   {post.title ? (
                     <title>{post.title}</title>
                   ) : (
@@ -365,7 +365,7 @@ export default function Post({ post, posts, preview }) {
                     property="og:image"
                     content={post.featuredImage?.node.sourceUrl}
                   />
-                </Head> */}
+                </Head>
                 {!!post.content && (
                   <section
                     itemProp="articleBody"
@@ -373,9 +373,9 @@ export default function Post({ post, posts, preview }) {
                   />
                 )}
               </BlogArticle>
-            </Content>
+            </Content> */}
           </Wrapper>
-          {/* <>
+          <>
             <article>
               <Head>
                 <title>
@@ -400,8 +400,8 @@ export default function Post({ post, posts, preview }) {
             </article>
 
             <SectionSeparator />
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          </> */}
+            {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
+          </>
         </Container>
       </Section>
     </LayoutJs>
