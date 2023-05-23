@@ -347,14 +347,14 @@ export default function Post({ post, posts, preview }) {
               </div>
             </Aside>
             <Content className="spacing">
-              <div>
+              {/* <div>
                 <p className="caps bold">from the landscaping experts</p>
                 {post.title ? (
                   <h1 className="title accent bold italics">{post.title}</h1>
                 ) : null}
-              </div>
+              </div> */}
               <BlogArticle className="blog-post">
-                <Head>
+                {/* <Head>
                   {post.title ? (
                     <title>{post.title}</title>
                   ) : (
@@ -365,7 +365,7 @@ export default function Post({ post, posts, preview }) {
                     property="og:image"
                     content={post.featuredImage?.node.sourceUrl}
                   />
-                </Head>
+                </Head> */}
                 {!!post.content && (
                   <section
                     itemProp="articleBody"
