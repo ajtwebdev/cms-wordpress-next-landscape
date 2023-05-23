@@ -10,7 +10,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { ButtonPrimary } from "/components/buttons";
 import Image from "components/Image";
-import { postPathBySlug, sanitizeExcerpt } from "lib/posts";
+import { postPathBySlugCategory, sanitizeExcerpt } from "lib/posts";
 import useSite from "hooks/use-site";
 import { WebsiteJsonLd } from "lib/json-ld";
 import Seo from "../components/seo";
@@ -126,6 +126,7 @@ const BannerBottomText = styled.div`
 `;
 
 export default function Blog({ posts, pagination }) {
+  console.log({ posts });
   return (
     <LayoutJs>
       <Seo
@@ -165,6 +166,8 @@ export default function Blog({ posts, pagination }) {
         <Container>
           <Ol>
             {posts.map((post) => {
+              const categorySlug =
+                post.categories.length > 0 ? post.categories[0]?.slug : "";
               return (
                 <li key={post.slug}>
                   <Article
@@ -185,7 +188,7 @@ export default function Blog({ posts, pagination }) {
                         <h2 className="subheader upper">
                           <Link
                             className="spacing accent"
-                            href={postPathBySlug(post.slug)}
+                            href={postPathBySlugCategory(post.slug,categorySlug)}
                           >
                             {post.title}
                           </Link>
