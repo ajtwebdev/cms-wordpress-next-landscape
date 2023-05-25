@@ -41,7 +41,7 @@ export default function Benefits1({ subheader, title, benefitContent }) {
                 <Image
                   alt={benefit.image.altText || ""}
                   srcSet={benefit.image.srcSet}
-                  src={benefit.image.src}
+                  src={benefit.image.sourceUrl}
                   width={width}
                   height={height}
                 />

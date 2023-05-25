@@ -18,27 +18,36 @@ const Text = styled.div`
 `;
 
 const Img = styled.div`
+  height: 100%;
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 52%, 0% 0%);
   figure {
+    height:100%;
     div {
+      height:100%;
       img {
         height: 100%;
-        max-height: 600px;
         object-fit: cover;
       }
     }
   }
+  
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 `;
 
 export default function Cta1({ subheader, title, body, image }) {
   return (
     <Wrapper>
-      <Flex>
+      <Grid>
         <Img>
           <Image
             className="stretch"
             alt={image.altText}
             srcSet={image.srcSet}
+            height="100%"
           />
         </Img>
         <Text>
@@ -60,7 +69,7 @@ export default function Cta1({ subheader, title, body, image }) {
             </ButtonPrimaryDark>
           </Container>
         </Text>
-      </Flex>
+      </Grid>
     </Wrapper>
   );
 }
