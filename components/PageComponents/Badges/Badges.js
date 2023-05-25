@@ -7,19 +7,21 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const ImgStyle = {
-  marginTop: "auto",
-  marginBottom: "auto",
-  height: "100px",
-  width: "100%",
+  // marginTop: "auto",
+  // marginBottom: "auto",
+  // height: "100px",
+  // width: "100%",
 };
 
 const Wrapper = styled.div`
   .slick-list {
     div {
-      img {
-        height: 150px;
-        width: 100%;
-        object-fit: cover;
+      figure {
+        img {
+          // height: 50px;
+          // width: 50px;
+          // object-fit: cover;
+        }
       }
     }
   }

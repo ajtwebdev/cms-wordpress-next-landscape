@@ -4,15 +4,16 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   background: var(--clr-accent);
-  //
 `;
+
+const Items = styled.div``;
 
 export default function Videos() {
   return (
     <Wrapper>
       <Section>
         <Container>
-          <center>
+          <Items>
             <Flex>
               <iframe
                 srcDoc="
@@ -92,26 +93,8 @@ export default function Videos() {
                 }}
                 frameBorder={0}
               />
-
-              {/* before optimization */}
-              {/* <iframe
-              width={420}
-              height={345}
-              src="https://www.youtube.com/embed/efRlX9MxKoU?rel=0"
-              frameBorder={0}
-              allowFullScreen
-              title="Calgary Landscaping Video"
-            />
-            <iframe
-              width={420}
-              height={345}
-              src="https://www.youtube.com/embed/msrESLwoj8Y?rel=0"
-              frameBorder={0}
-              allowFullScreen
-              title="Calgary Landscaping Video"
-            /> */}
             </Flex>
-          </center>
+          </Items>
         </Container>
       </Section>
     </Wrapper>
