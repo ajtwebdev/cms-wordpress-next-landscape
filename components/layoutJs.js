@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 export default function LayoutJs({ children }) {
   return (
     <Wrapper>
-      <HeaderBasic />
+      {/* <HeaderBasic /> */}
       <main>{children}</main>
       <GoogleBadge />
       <FinanceBanner />
