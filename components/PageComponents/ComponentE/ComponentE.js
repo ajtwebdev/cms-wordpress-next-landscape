@@ -49,32 +49,34 @@ export default function ComponentE({ subheader, title, content }) {
             <h2 className="title">{title}</h2>
           </div>
         </Text>
-        <GridThree>
-          {content.map((item) => {
-            return (
-              <Item className="spacing">
-                <Image
-                  alt={item.image.altText || ""}
-                  srcSet={item.image.srcSet}
-                  src={item.image.src}
-                  width={width}
-                  height={height}
-                />
+        <center>
+          <GridThree>
+            {content.map((item) => {
+              return (
+                <Item className="spacing">
+                  <Image
+                    alt={item.image.altText || ""}
+                    srcSet={item.image.srcSet}
+                    src={item.image.src}
+                    width={width}
+                    height={height}
+                  />
 
-                <Inner>
-                  <h3 className="subheader accent">{item.title}</h3>
-                  {item.description ? (
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: `${item.description}`,
-                      }}
-                    />
-                  ) : null}
-                </Inner>
-              </Item>
-            );
-          })}
-        </GridThree>
+                  <Inner>
+                    <h3 className="subheader accent">{item.title}</h3>
+                    {item.description ? (
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: `${item.description}`,
+                        }}
+                      />
+                    ) : null}
+                  </Inner>
+                </Item>
+              );
+            })}
+          </GridThree>
+        </center>
         <center>
           <ButtonPrimary href="/contact">talk to us today</ButtonPrimary>
         </center>

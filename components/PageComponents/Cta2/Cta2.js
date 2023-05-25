@@ -1,27 +1,38 @@
-
-import React from "react"
-import styled from "styled-components"
-import { ButtonPrimaryDark } from "components/buttons"
-import { Container, Section } from "components/layoutComponents"
-import Image from "components/Image"
+import React from "react";
+import styled from "styled-components";
+import { ButtonPrimaryDark } from "components/buttons";
+import { Container, Section } from "components/layoutComponents";
+import Image from "components/Image";
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 2em auto 4em auto;
+  grid-template-columns: 10px auto 1em auto;
   grid-template-rows: 8em auto 8em;
 
   @media screen and (max-width: 46em {
       display: flex;
       background: var(--clr-accent);
   })
-`
+`;
 
 const Img = styled.div`
   grid-row: 1 / span 2;
   grid-column: 2 / span 1;
   z-index: 2;
+  figure {
+    div {
+      img {
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 
-`
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+`;
 
 const Bg = styled.div`
   grid-row: 2 / -1;
@@ -33,7 +44,7 @@ const Bg = styled.div`
   @media screen and (max-width: 46em {
     display: none;
 })
-`
+`;
 
 const Text = styled.div`
   grid-row: 2 / -1;
@@ -42,7 +53,7 @@ const Text = styled.div`
   align-self: center;
   color: var(--txt-light);
   padding: 2em;
-`
+`;
 
 export default function Cta2({ title, image, body }) {
   return (
@@ -50,7 +61,7 @@ export default function Cta2({ title, image, body }) {
       <Container>
         <Grid>
           <Img>
-            <Image alt={image.altText} srcSet={image.srcSet}  />
+            <Image alt={image.altText} srcSet={image.srcSet} />
           </Img>
           <Bg />
           <Text className="spacing">
@@ -61,5 +72,5 @@ export default function Cta2({ title, image, body }) {
         </Grid>
       </Container>
     </Section>
-  )
+  );
 }

@@ -81,7 +81,7 @@ const BannerWrapper = styled.div`
   grid-row: 1 / span 2;
   grid-column: 1 / -1;
   z-index: 1;
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/calgary-landscaping-testimonials-banner.jpg"),
+  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/blog-banner.png"),
     rgba(0, 0, 0, 0.7);
   background-blend-mode: overlay;
   background-position: center;
@@ -188,7 +188,10 @@ export default function Blog({ posts, pagination }) {
                         <h2 className="subheader upper">
                           <Link
                             className="spacing accent"
-                            href={postPathBySlugCategory(post.slug,categorySlug)}
+                            href={postPathBySlugCategory(
+                              post.slug,
+                              categorySlug
+                            )}
                           >
                             {post.title}
                           </Link>

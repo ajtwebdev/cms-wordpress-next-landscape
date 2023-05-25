@@ -10,6 +10,9 @@ const FormWrapper = styled.div`
   // background: var(--clr-dark);
   // color: var(--txt-light);
   // padding: 2em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   label {
     text-transform: capitalize;
     margin-left: 2px;
