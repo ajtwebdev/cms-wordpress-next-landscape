@@ -19,13 +19,13 @@ export default function ServiceForm() {
       </h3>
       <div>
         <form
-          name="contact"
+          name="service"
           className="spacing"
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="service" value="service" />
           <p hidden>
             <label>
               Don’t fill this out: <input name="bot-field" />

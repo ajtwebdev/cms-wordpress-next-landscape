@@ -1,24 +1,24 @@
-import React from "react"
-import styled from "styled-components"
-import { Input, TextArea, Submit } from "./FormItems"
+import React from "react";
+import styled from "styled-components";
+import { Input, TextArea, Submit } from "./FormItems";
 
 const FormWrapper = styled.div`
   // background: var(--clr-dark);
   // color: var(--txt-light);
   // padding: 2em;
-`
+`;
 
 export default function FormFooter(props) {
   return (
     <FormWrapper>
       <form
-        name="contact"
+        name="footer"
         className="spacing"
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
       >
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="footer" value="footer" />
         <p hidden>
           <label>
             Don’t fill this out: <input name="bot-field" />
@@ -80,5 +80,5 @@ export default function FormFooter(props) {
         <Submit type="submit" id="submit" value="submit" />
       </form>
     </FormWrapper>
-  )
+  );
 }

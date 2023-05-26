@@ -27,7 +27,7 @@ export default function WarrantyForm(props) {
             data-netlify="true"
             netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="warranty" value="warranty" />
             <p hidden>
               <label>
                 Don’t fill this out: <input name="bot-field" />

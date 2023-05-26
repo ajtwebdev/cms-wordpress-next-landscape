@@ -76,17 +76,17 @@ export default function Index() {
                   <ButtonInline href="/residential-services/outdoor-living">
                     outdoor living
                   </ButtonInline>
-                  . Several factors contribute to their success and industry
+                  . Several factors contribute to our success and industry
                   dominance. Firstly, Project Landscape excels in{" "}
                   <ButtonInline href="/landscape-design">
                     landscape design
                   </ButtonInline>
-                  . They have a team of highly skilled and creative designers
-                  who understand the unique needs and preferences of Calgary
-                  homeowners. Their designs blend aesthetics with functionality,
+                  . We have a team of highly skilled and creative designers who
+                  understand the unique needs and preferences of Calgary
+                  homeowners. Our designs blend aesthetics with functionality,
                   ensuring that every outdoor space is transformed into a
-                  stunning and practical oasis. Secondly, the company is known
-                  for its exceptional Calgary landscaping{" "}
+                  stunning and practical oasis. Secondly, we are known for our
+                  exceptional Calgary landscaping{" "}
                   <ButtonInline href="/esidential-services/concrete-installations">
                     installation services
                   </ButtonInline>
@@ -111,13 +111,13 @@ export default function Index() {
                   <ButtonInline href="/landscape-lighting-services-calgary">
                     outdoor lighting
                   </ButtonInline>
-                  , they handle every aspect of the installation process.
+                  , we handle every aspect of the installation process.
                   Additionally, Project Landscape Calgary stands out for its
-                  commitment to customer satisfaction. They prioritize open
+                  commitment to customer satisfaction. We prioritize open
                   communication while actively involving clients in the design
-                  and installation phases. The company's dedication to meeting
-                  deadlines, providing transparent pricing, and delivering
-                  high-quality workmanship has earned them a{" "}
+                  and installation phases. Our dedication to meeting deadlines,
+                  providing transparent pricing, and delivering high-quality
+                  workmanship has earned us a{" "}
                   <ButtonInline href="/testimonials">
                     stellar reputation
                   </ButtonInline>{" "}
