@@ -58,7 +58,7 @@ export default function ReferForm(props) {
               </fieldset>
               <fieldset>
                 <legend>Your Friend/Family Info</legend>
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="referral" value="referral" />
                 <p hidden>
                   <label>
                     Don’t fill this out: <input name="bot-field" />
