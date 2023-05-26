@@ -6,12 +6,11 @@ import { FaPhone } from "react-icons/fa";
 import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
-import { useLockedBody } from 'usehooks-ts'
-
+import { useLockedBody } from "usehooks-ts";
 
 const device = {
   sm: "18em",
-  md: "56em",
+  md: "70em",
 };
 
 const Header = styled.div`
@@ -120,8 +119,7 @@ const NavList = styled.ul`
     box-shadow: var(--shadow-bottom);
     border-radius: var(--br);
     border-top: 1px solid var(--txt-dark-secondary);
-    padding: 1em 2em 10em 2em;
-
+    padding: 1em 2em 16em 2em;
 
     height: 100vh;
     overflow: auto;
@@ -170,6 +168,10 @@ const Dropdown = styled.li`
     display: flex;
     align-items: center;
     gap: 2px;
+
+    @media screen and (max-width: ${device.md}) {
+      display: none;
+    }
 
     :hover,
     :focus {
@@ -492,15 +494,15 @@ export default function HeaderBasic() {
   const [dropdownServices, dropdownOpenServices] = useState(false);
   const [scrolled, setScrolled] = useState(true);
 
-  const [locked, setLocked] = useLockedBody(false, '__next')
+  const [locked, setLocked] = useLockedBody(false, "__next");
 
   const toggleLocked = () => {
-    setLocked(!locked)
-  }
+    setLocked(!locked);
+  };
 
   function toggleMenu() {
     navOpen(!nav);
-    toggleLocked()
+    toggleLocked();
   }
 
   function toggleDropdownAbout() {

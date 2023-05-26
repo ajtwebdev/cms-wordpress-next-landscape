@@ -15,9 +15,10 @@ const Img = styled.div`
   grid-column: 2 / span 1;
   z-index: 2;
 
-  .img {
-    height: 450px;
-    width: 100%;
+  img {
+    // height: 450px;
+    // width: 100%;
+    object-fit: cover;
   }
 `;
 

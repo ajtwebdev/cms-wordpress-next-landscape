@@ -36,6 +36,7 @@ const GridAuto = styled.div`
 const Item = styled.div`
   position: relative;
   border-top: 6px solid var(--clr-accent);
+
   .service-img {
     height: 300px;
     width: 100%;
