@@ -29,7 +29,7 @@ export default function ReferForm(props) {
             <Flex>
               <fieldset>
                 <legend>Your Info</legend>
-                <input type="hidden" name="referral" value="referral" />
+                <input type="hidden" name="form-name" value="referral" />
                 <p hidden>
                   <label>
                     Don’t fill this out: <input name="bot-field" />

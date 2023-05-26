@@ -25,7 +25,7 @@ export default function ServiceForm() {
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="service" value="service" />
+          <input type="hidden" name="form-name" value="service" />
           <p hidden>
             <label>
               Don’t fill this out: <input name="bot-field" />

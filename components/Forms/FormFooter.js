@@ -18,7 +18,7 @@ export default function FormFooter(props) {
         data-netlify="true"
         netlify-honeypot="bot-field"
       >
-        <input type="hidden" name="footer" value="footer" />
+        <input type="hidden" name="form-name" value="footer" />
         <p hidden>
           <label>
             Don’t fill this out: <input name="bot-field" />
