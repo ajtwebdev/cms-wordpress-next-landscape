@@ -6,7 +6,18 @@ const Wrapper = styled.div`
   background: var(--clr-accent);
 `;
 
-const Items = styled.div``;
+const Items = styled.div`
+  display: grid;
+  place-items: center;
+
+  iframe {
+    width: 500px;
+    @media screen and (max-width: 1200px) {
+      max-width: 640px;
+      width: 100%;
+    }
+  }
+`;
 
 export default function Videos() {
   return (
@@ -48,8 +59,6 @@ export default function Videos() {
         </a>
     "
                 style={{
-                  maxWidth: "640px",
-                  width: "100%",
                   aspectRatio: "16/9",
                 }}
                 frameBorder={0}
@@ -87,8 +96,6 @@ export default function Videos() {
         </a>
     "
                 style={{
-                  maxWidth: "640px",
-                  width: "100%",
                   aspectRatio: "16/9",
                 }}
                 frameBorder={0}

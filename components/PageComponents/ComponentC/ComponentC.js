@@ -4,26 +4,26 @@ import { Section, Container } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
 
 const Text = styled.div`
-  text-align: center;
-  max-width: 140ch;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  // text-align: center;
+  // max-width: 140ch;
+  // width: 100%;
+  // margin-right: auto;
+  // margin-left: auto;
 
-  p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90ch;
-    ul {
-      padding: 2em;
-      width: 75%;
-      li {
-        list-style-type: none;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-  }
+  // p {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   max-width: 90ch;
+  //   ul {
+  //     padding: 2em;
+  //     width: 75%;
+  //     li {
+  //       list-style-type: none;
+  //       margin-left: auto;
+  //       margin-right: auto;
+  //     }
+  //   }
+  // }
 `;
 
 // const StyledImg = styled(GatsbyImage)`
@@ -36,7 +36,7 @@ export default function ComponentC({ subheader, title, body, image }) {
   let height = "auto";
   return (
     <Section>
-      <Container className="spacing center ">
+      <Container className="spacing  ">
         <Text className="spacing">
           <div className="">
             <p className="subheader accent">{subheader}</p>
