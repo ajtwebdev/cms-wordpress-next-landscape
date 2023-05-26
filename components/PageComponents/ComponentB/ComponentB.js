@@ -28,6 +28,14 @@ const List = styled.div`
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: 967px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 670px) {
+    grid-template-columns: 1fr;
+  }
+
   grid-gap: 2em;
 
   @media screen and (max-width: ${device.md}) {

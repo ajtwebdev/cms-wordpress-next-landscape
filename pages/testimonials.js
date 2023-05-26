@@ -143,6 +143,81 @@ export default function Reviews() {
 
               "
             />
+            <Review
+              title="fire pit patio"
+              name="Carlos from Calgary"
+              review="Project landscaping did a great patio project for us.
+They were very professional, paid special attention to detail, they finished the job in a timely manner. I recommend them to anyone who is looking for a professional and responsible company."
+            />
+            <Review
+              title="quality work"
+              name="Melanie
+"
+              review="After reaching out to several landscaping companies, we opted to go with Project Landscape. We were in a new home and looking to have a complete side and backyard landscape. The price quoted was reasonable and Scott had great ideas and suggestions on how to make our yard most functional.
+We were working against the weather (this project was done in late October/November) but everything was completed as promised. They were patient and professional with us while we made several changes an inquiries along the way.
+Overall, we couldn’t be happier with the finished result. Excellent quality work! Done on time and on budget. We are more than satisfied!"
+            />
+            <Review
+              title="great communication"
+              name="Richard C"
+              review="
+Scott and his crew were a pleasure to work with. Great communication and professionalism from start to finish. Their advice and expertise were invaluable in creating the beautiful front yard we hoped for. We would definitely recommend Project Landscape!"
+            />
+            <Review
+              title="excellent backyard landscaping"
+              name="Sean S."
+              review="Project Landscape Ltd. did an excellent job of landscaping my yard. Many things stood out that prompted me to take the time and write up a sincere and genuine 5-star review. I feel strongly that homeowners should consider Project Landscape for their landscaping needs, as this is the kind of business that I want to thrive and succeed in my hometown of Calgary. I am incredibly pleased with the way the conducted business and executed the work. I will definitely be ringing them up for any of my landscaping needs in the future. Project Landscape is in it to build relationships and gain return customers, which I appreciated. They demonstrated this by cleaning up, putting things back where they were supposed to go; these little things mattered. Ultimately I felt as though the end result was thorough and as if they were working on their own properties. As a first time house-owner (with a yard) I was pleased with Project Landscape!"
+            />
+            <Review
+              title="very satisfied"
+              name="Valarie B"
+              review="We recently had work done in our backyard, and are very satisfied with the results! Their recommendations helped us achieve the yard we were looking for. Everyone we dealt with in the company was friendly and all displayed an excellent work ethic resulting in a high standard in the finished project. We’re so happy with how things turned out that we already have them booked for another project!"
+            />
+            <Review
+              title="great work"
+              name="Patricio C"
+              review="Great work, all aligned to the original plan. The deck was done right away and on time. The rocks took a little longer. It was great to have a central person in an office (Allison) to talk to, opposed to calling a contractor that is working somewhere else and may or may not pick up the phone. That open line was key to us."
+            />
+            <Review
+              title="scott and team were amazing"
+              name="Bryn
+"
+              review="Scott and Team did an amazing job with landscaping our new home. His crew were professional, friendly and did great work. I would highly recommend this company.
+
+"
+            />
+            <Review
+              title="highly recommend"
+              name="J.W."
+              review="Highly recommend! Found Project Landscape online and based on the reviews sent them an email. Alison called right away and advised me they could fit in a small privacy wall we needed constructed. Scott came out and gave a very reasonable quote. A couple weeks later the job was completed and looks great. Professional, responsive and a seamless process. Thanks Project Landscape!!"
+            />
+            <Review
+              title="excellent communication and timeline"
+              name="D.Mariash
+"
+              review="We’ve used Project Landscape on several projects now. Communication, timelines and quality of work has been top notch. We highly recommend Scott and his crew!
+
+"
+            />
+            <Review
+              title="great communication & professionalism"
+              name="Z.Espinoza
+"
+              review="Great communication and professionalism throughout. When we had any questions or concerns they were addressed accordingly. We found it really helpful to have one central individual we could address these with, Alison, thank you so much for making this process very easy. We had several quotes done and by far Project Landscaping truly was the only company that worked with us and our budget.
+We were incredibly impressed with the quality of work, our fence turned out amazing! We now have several of our neighbors looking to complete their fences with Project Landscaping. We will continue to recommend your company again and again."
+            />
+            <Review
+              title="we highly recommend"
+              name="B.Kerr"
+              review="We had several quotes for our new home landscaping project, however Project Landscape was one of the very few companies to provide a detailed written quote. This transparency allowed us to make thoughtful adjustments based on our budget while maximizing our landscaping ideas. Scott was also very helpful, providing insight into design alternatives we hadn’t thought of, which turned out amazing. We managed to stay on budget and our completed project turned out better than we had imagined it could have. We enjoyed working with Scott and his team, they were personable and friendly, and easily made this project exciting and fun. We have since had many neighbours positively comment on our landscaping, which is satisfying for sure. We would definitely recommend Project landscape.
+
+"
+            />
+            <Review
+              title="lawn maintenance"
+              name="Jo"
+              review="Project Landscape has been a most reliable company looking after my lawn needs. They are very professional. When they leave after the mowing the area is completely cleaned up. I do appreciate being able to communicate with them and they have been very agreeable to my needs."
+            />
           </GridThree>
         </Container>
       </Section>

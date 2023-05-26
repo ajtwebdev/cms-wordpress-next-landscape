@@ -32,6 +32,12 @@ const Img = styled.div`
   }
 `;
 
+const Inner = styled.div`
+  a {
+    color: var(--txt-light);
+  }
+`;
+
 export default function ImageLeftDark({
   subheader,
   title,
@@ -57,7 +63,7 @@ export default function ImageLeftDark({
                 <p className="subheader accent">{subheader} </p>
                 <h2 className="title">{title}</h2>
               </div>
-              <div
+              <Inner
                 dangerouslySetInnerHTML={{
                   __html: `${body}`,
                 }}

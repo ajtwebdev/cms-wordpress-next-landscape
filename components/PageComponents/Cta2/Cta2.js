@@ -6,7 +6,7 @@ import Image from "components/Image";
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 10px auto 1em auto;
+  grid-template-columns: 2em auto 1em auto;
   grid-template-rows: 8em auto 8em;
 
   @media screen and (max-width: 46em {

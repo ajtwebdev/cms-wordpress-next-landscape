@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   display: grid;
   place-items: center;
 
-  min-height: 100vh;
+  min-height: 90vh;
   height: 100%;
 
   @media screen and(max-width: 36em) {

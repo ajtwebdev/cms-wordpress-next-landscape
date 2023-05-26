@@ -21,21 +21,31 @@ const Img = styled.div`
   height: 100%;
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 52%, 0% 0%);
   figure {
-    height:100%;
+    height: 100%;
     div {
-      height:100%;
+      height: 100%;
       img {
         height: 100%;
         object-fit: cover;
       }
     }
   }
-  
 `;
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+
+  @media screen and (max-width: 57em) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const Inner = styled.div`
+  a {
+    color: var(--txt-light);
+  }
 `;
 
 export default function Cta1({ subheader, title, body, image }) {
@@ -57,7 +67,7 @@ export default function Cta1({ subheader, title, body, image }) {
               <h2 className="title">{title}</h2>
             </div>
             {body ? (
-              <div
+              <Inner
                 dangerouslySetInnerHTML={{
                   __html: `${body}`,
                 }}

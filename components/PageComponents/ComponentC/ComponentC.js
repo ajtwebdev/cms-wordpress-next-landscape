@@ -18,6 +18,7 @@ const Text = styled.div`
       padding: 2em;
       width: 75%;
       li {
+        list-style-type: none;
         margin-left: auto;
         margin-right: auto;
       }

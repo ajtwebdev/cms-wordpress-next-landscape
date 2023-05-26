@@ -14,14 +14,9 @@ const ImgStyle = {
 };
 
 const Wrapper = styled.div`
-  .slick-list {
+  .slick-slide {
     div {
-      figure {
-        img {
-          // height: 50px;
-          // width: 50px;
-          // object-fit: cover;
-        }
+      img {
       }
     }
   }

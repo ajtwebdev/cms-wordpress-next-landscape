@@ -21,16 +21,14 @@ const device = {
 };
 
 const Article = styled.article`
-  width: 60%;
+  max-width: 1000px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: var(--shadow-light);
   border-raidus: var(--br);
   display: flex;
   align-items: center;
-  img {
-    /* width: 100%; */
-  }
   @media screen and (max-width: ${device.md}) {
     flex-direction: column;
   }
@@ -45,6 +43,15 @@ const Article = styled.article`
     @media screen and (max-width: ${device.md}) {
       margin-left: 0;
       margin-top: var(--spacer);
+    }
+  }
+
+  figure {
+    div {
+      img {
+        object-fit: cover;
+        height: 300px;
+      }
     }
   }
 `;

@@ -7,13 +7,17 @@ import LayoutJs from "../../components/layoutJs";
 import Seo from "../../components/seo";
 import styled from "styled-components";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
-import PostPage from '../../components/blogPage'
+import PostPage from "../../components/blogPage";
 
 export default function Page(props) {
-  const { page,post } = props;
+  const { page, post } = props;
 
-  if(post){
-    return <PostPage {...props} />
+  if (post) {
+    return (
+      <>
+        <PostPage {...props} />
+      </>
+    );
   }
 
   const {
