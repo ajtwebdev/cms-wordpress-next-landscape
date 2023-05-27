@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Container, Flex } from "components/layoutComponents";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -7,6 +7,7 @@ import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
 import { useLockedBody } from "usehooks-ts";
+import { useRouter } from "next/router";
 
 const device = {
   sm: "18em",
@@ -494,6 +495,10 @@ export default function HeaderBasic() {
   const [dropdownServices, dropdownOpenServices] = useState(false);
   const [scrolled, setScrolled] = useState(true);
 
+  const { asPath} = useRouter()
+
+  // console.log({params})
+
   const [locked, setLocked] = useLockedBody(false, "__next");
 
   const toggleLocked = () => {
@@ -504,6 +509,10 @@ export default function HeaderBasic() {
     navOpen(!nav);
     toggleLocked();
   }
+
+  useEffect(() => {
+    navOpen(false)
+  },[asPath])
 
   function toggleDropdownAbout() {
     dropdownOpenAbout(!dropdownAbout);
