@@ -5,6 +5,7 @@ import { Actions, Container, HeroBannerPadding } from "../../layoutComponents";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import styles from "./PatioSlider.module.scss";
+import Image from "next/image";
 
 const captionStyle = {
   textAlign: "left",
@@ -23,8 +24,15 @@ export default function PatioSlider({ title }) {
         <div className={styles.heroWrapper}>
           <Carousel>
             <Carousel.Item interval={5000}>
-              <div className={styles.content}>
-                <div className={styles.content1} />
+              <div>
+                <Image
+                  src="/patio-slider-1.webp"
+                  alt="banner"
+                  height={100}
+                  width={100}
+                  className={styles.content1}
+                />
+                {/* <div className={styles.content1} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">

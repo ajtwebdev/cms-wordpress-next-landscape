@@ -23,7 +23,8 @@ const device = {
 };
 
 const Article = styled.article`
-  width: 60%;
+  max-width: 1000px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: var(--shadow-light);

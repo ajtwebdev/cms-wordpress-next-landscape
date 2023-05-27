@@ -30,7 +30,6 @@ const Text = styled.div`
 
 const Item = styled.div`
   text-align: center;
-
   figure {
     img {
       height: 250px;

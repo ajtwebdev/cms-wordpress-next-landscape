@@ -57,19 +57,21 @@ export default function ImageGallery({ subheader, title, body, imageGallery }) {
               />
             ) : null}
           </Text>
-          <Grid>
-            {imageGallery.map((image) => {
-              return (
-                <Image
-                  alt={image.altText || ""}
-                  srcSet={image.srcSet}
-                  src={image.src}
-                  width={width}
-                  height={height}
-                />
-              );
-            })}
-          </Grid>
+          <center>
+            <Grid>
+              {imageGallery.map((image) => {
+                return (
+                  <Image
+                    alt={image.altText || ""}
+                    srcSet={image.srcSet}
+                    src={image.src}
+                    width={width}
+                    height={height}
+                  />
+                );
+              })}
+            </Grid>
+          </center>
         </Container>
       </Section>
     </Wrapper>
