@@ -5,7 +5,7 @@ import { Actions, Container, HeroBannerPadding } from "../../layoutComponents";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import styles from "./PatioSlider.module.scss";
-import Image from "next/image";
+import Image from "../../Image/Image";
 
 const captionStyle = {
   textAlign: "left",
@@ -17,6 +17,9 @@ const captionStyle = {
 };
 
 export default function PatioSlider({ title }) {
+  let width = "100%";
+  let height = "400px";
+
   return (
     <div className={styles.wrapper}>
       <HeroBannerPadding />
@@ -24,12 +27,12 @@ export default function PatioSlider({ title }) {
         <div className={styles.heroWrapper}>
           <Carousel>
             <Carousel.Item interval={5000}>
-              <div>
+              <div className={styles.contentImg}>
                 <Image
-                  src="/patio-slider-1.webp"
+                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"
                   alt="banner"
-                  height={100}
-                  width={100}
+                  height={height}
+                  width={width}
                   className={styles.content1}
                 />
                 {/* <div className={styles.content1} /> */}
@@ -45,8 +48,15 @@ export default function PatioSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <div className={styles.content}>
-                <div className={styles.content2} />
+              <div className={styles.contentImg}>
+                <Image
+                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"
+                  alt="banner"
+                  height={height}
+                  width={width}
+                  className={styles.content1}
+                />
+                {/* <div className={styles.content1} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -59,8 +69,15 @@ export default function PatioSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <div className={styles.content}>
-                <div className={styles.content3} />
+              <div className={styles.contentImg}>
+                <Image
+                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"
+                  alt="banner"
+                  height={height}
+                  width={width}
+                  className={styles.content1}
+                />
+                {/* <div className={styles.content1} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
