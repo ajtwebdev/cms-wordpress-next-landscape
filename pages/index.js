@@ -1,13 +1,12 @@
 import React from "react";
 import LayoutJs from "../components/layoutJs";
 import HeroBasic from "../components/Heros/HeroBasic";
-import Badges from "../components/badges";
-import MainServicesLinks from "../components/Services/MainServicesLinks";
-import AllServicesBanner from "../components/Services/AllServicesBanner";
+import Badges from "../components/Badges/Badges";
+import AllServices from "../components/AllServices/AllServices";
 import { Container, Flex, Section } from "../components/layoutComponents";
 import { ButtonInline } from "../components/buttons";
 import styled from "styled-components";
-import Cta3 from "../components/Cta/Cta3";
+import Cta3 from "../components/Cta3/Cta3";
 import ProductsImg from "../components/Sections/productsImg";
 import ShowroomSection from "../components/Sections/ShowroomSection";
 import MainVideo from "../components/Sections/MainVideo";
@@ -21,6 +20,7 @@ import Videos from "../components/videos";
 import FaqFeatured from "../components/faq/faqFeatured";
 import { Helmet } from "react-helmet";
 import Seo from "../components/seo";
+import MainServices from "../components/MainServices/MainServices";
 
 const Wrapper = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hardscaping-slider.webp"),
@@ -51,8 +51,8 @@ export default function Index() {
       />
       <HeroBasic />
       <Badges />
-      <MainServicesLinks />
-      <AllServicesBanner />
+      <MainServices />
+      <AllServices />
       <Wrapper>
         <Section>
           <Container>

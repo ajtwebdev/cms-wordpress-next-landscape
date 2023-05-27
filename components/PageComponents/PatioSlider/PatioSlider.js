@@ -6,40 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import styles from "./PatioSlider.module.scss";
 
-const Content1 = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"),
-    rgba(0, 0, 0, 0.2);
-  background-blend-mode: overlay;
-  background-position: center;
-  height: 85vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block !important;
-  width: 100% !important;
-`;
-const Content2 = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-2.png"),
-    rgba(0, 0, 0, 0.2);
-  background-blend-mode: overlay;
-  background-position: center;
-  height: 85vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block !important;
-  width: 100% !important;
-`;
-const Content3 = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"),
-    rgba(0, 0, 0, 0.2);
-  background-blend-mode: overlay;
-  background-position: center;
-  height: 85vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block !important;
-  width: 100% !important;
-`;
-
 const captionStyle = {
   textAlign: "left",
   display: "flex",

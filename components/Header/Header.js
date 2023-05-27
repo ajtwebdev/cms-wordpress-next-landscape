@@ -97,7 +97,7 @@ export default function HeaderBasic() {
 
   function toggleMenu() {
     navOpen(!nav);
-    toggleLocked();
+    // toggleLocked();
   }
 
   useEffect(() => {
