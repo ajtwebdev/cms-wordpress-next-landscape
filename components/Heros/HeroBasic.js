@@ -5,6 +5,7 @@ import { Container, HeroBannerPadding } from "../layoutComponents";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import PortfolioBanner from "../portfolioBanner";
+import styles from "./HeroBasic.module.scss";
 
 const Wrapper = styled.div`
   padding-bottom: 4em;
@@ -95,17 +96,17 @@ const captionStyle = {
   textShadow: "-3px 3px 3px #000000",
 };
 
-export default function HeroSlider(props) {
+export default function HeroBasic(props) {
   return (
-    <Wrapper>
+    <div className={styles.wrapper}>
       <HeroBannerPadding />
-      <HeroGrid>
-        <HeroWrapper>
+      <div className={styles.heroGrid}>
+        <div className={styles.heroWrapper}>
           <Carousel>
             <Carousel.Item interval={5000}>
-              <Content>
-                <Content1 className="d-block w-100" />
-              </Content>
+              <div className={styles.content}>
+                <div className={styles.content1} />
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <h2 className="title">outdoor living done right</h2>
@@ -117,26 +118,23 @@ export default function HeroSlider(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <Content>
-                <Content2 className="d-block w-100" />
-              </Content>
+              <div className={styles.content}>
+                <div className={styles.content2} />
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
-                  <h2 className="title">hardscaping services</h2>
-                  <p className="subheader tan">
-                    Create a Stunning Outdoor Oasis with Our Hardscaping
-                    Services
-                  </p>
-                  <ButtonPrimary href="/residential-services/hardscaping">
+                  <h2 className="title">softscaping services</h2>
+                  <p className="subheader tan">Bring your backyard to life</p>
+                  <ButtonPrimary href="/residential-services/softscaping">
                     get started &#8594;
                   </ButtonPrimary>
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <Content>
-                <Content3 className="d-block w-100" />
-              </Content>
+              <div className={styles.content}>
+                <div className={styles.content3} />
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <h2 className="title">softscaping services</h2>
@@ -148,8 +146,8 @@ export default function HeroSlider(props) {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-        </HeroWrapper>
-        <HeroBottomText>
+        </div>
+        <div className={styles.heroBottomText}>
           <Container>
             <p>
               Transform your{" "}
@@ -166,9 +164,8 @@ export default function HeroSlider(props) {
               transformation today!
             </p>
           </Container>
-        </HeroBottomText>
-      </HeroGrid>
-      <PortfolioBanner />
-    </Wrapper>
+        </div>
+      </div>
+    </div>
   );
 }

@@ -6,53 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import styles from "./PatioSlider.module.scss";
 
-const Wrapper = styled.div`
-  padding-bottom: 4em;
-  p {
-    margin-bottom: 0;
-  }
-
-  .carousel-indicators {
-    margin-bottom: 4rem;
-  }
-`;
-
-const HeroGrid = styled.div`
-  display: grid;
-  grid-template-rows: auto 4em auto;
-`;
-
-const HeroWrapper = styled.div`
-  grid-row: 1 / span 2;
-  grid-column: 1 / -1;
-  z-index: 1;
-`;
-
-const HeroBottomText = styled.div`
-  grid-row: 2 / -1;
-  grid-column: 1 / -1;
-  z-index: 2;
-
-  background: var(--clr-dark);
-  color: var(--txt-light);
-  padding: 2em;
-  width: 80%;
-`;
-
-const Content = styled.div`
-  position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    background: rgba(0, 0, 0, 0.1);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-`;
-
 const Content1 = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"),
     rgba(0, 0, 0, 0.2);
@@ -61,6 +14,8 @@ const Content1 = styled.div`
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
+  display: block !important;
+  width: 100% !important;
 `;
 const Content2 = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-2.png"),
@@ -70,6 +25,8 @@ const Content2 = styled.div`
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
+  display: block !important;
+  width: 100% !important;
 `;
 const Content3 = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"),
@@ -79,6 +36,8 @@ const Content3 = styled.div`
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
+  display: block !important;
+  width: 100% !important;
 `;
 
 const captionStyle = {
@@ -99,7 +58,7 @@ export default function PatioSlider({ title }) {
           <Carousel>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <Content1 className="d-block w-100" />
+                <div className={styles.content1} />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -113,7 +72,7 @@ export default function PatioSlider({ title }) {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <Content2 className="d-block w-100" />
+                <div className={styles.content2} />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -127,7 +86,7 @@ export default function PatioSlider({ title }) {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <Content3 className="d-block w-100" />
+                <div className={styles.content3} />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">

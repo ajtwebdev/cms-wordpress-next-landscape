@@ -1,6 +1,6 @@
 import React from "react";
 import LayoutJs from "../components/layoutJs";
-import HeroSlider from "../components/Heros/HeroBasic";
+import HeroBasic from "../components/Heros/HeroBasic";
 import Badges from "../components/badges";
 import MainServicesLinks from "../components/Services/MainServicesLinks";
 import AllServicesBanner from "../components/Services/AllServicesBanner";
@@ -49,7 +49,7 @@ export default function Index() {
         title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
         description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
       />
-      <HeroSlider />
+      <HeroBasic />
       <Badges />
       <MainServicesLinks />
       <AllServicesBanner />
