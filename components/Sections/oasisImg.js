@@ -60,8 +60,7 @@ export default function OasisImg(props) {
               height={100}
               width={400}
               style={ImgStyle}
-              src="/calgary-landscaping-oasis.png
-"
+              src="/calgary-landscaping-oasis.png"
               alt="best landscaper calgary, AB"
             />
           </Flex>

@@ -37,7 +37,7 @@ export default function MainServices() {
                 more services
               </ButtonInline>
               , we are the Calgary Landscaping experts you can trust for all
-              your residential landscaping needs
+              your residential landscaping needs.
             </p>
           </div>
         </Container>

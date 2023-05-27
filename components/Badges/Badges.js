@@ -34,7 +34,7 @@ export default function Badges() {
               top rated calgary landscaping company
             </h2>
           </Container>
-          <Slider className="slider" {...settings}>
+          <Slider className={styles.slider} {...settings}>
             <Image
               src="/badges/best-landscaping-companies-in-calgary-1.svg"
               alt="best landscaping companies in calgary"
@@ -155,7 +155,7 @@ export default function Badges() {
               height={100}
             />
           </Slider>
-          {/* <div className={styles.grid}>
+          <div className={styles.grid}>
             <Image
               src="/badges/best-landscaping-companies-in-calgary-1.svg"
               alt="best landscaping companies in calgary"
@@ -192,7 +192,7 @@ export default function Badges() {
               width={100}
               height={100}
             />
-          </div> */}
+          </div>
         </div>
       </Section>
     </div>

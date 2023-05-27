@@ -40,6 +40,8 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           fieldGroupName
           subheader
           title
+          button
+          link
           image {
             altText
             sourceUrl(size: MEDIUM_LARGE)
@@ -52,6 +54,8 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           body
           subheader
           title
+          button
+          link
           image {
             altText
             sourceUrl(size: MEDIUM_LARGE)
@@ -63,6 +67,8 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           body
           subheader
           title
+          button
+          link
           image {
             altText
             sourceUrl(size: MEDIUM_LARGE)

@@ -129,7 +129,7 @@ export default function MainVideo() {
               </Actions>
             </Container>
           </Text>
-          ;
+
           <Grid>
             <Bg />
             <Video>

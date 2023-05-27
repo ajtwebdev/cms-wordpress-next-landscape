@@ -145,7 +145,7 @@ export default function Index() {
       <Cta3 />
       <MainTrends />
       <Why />
-      <Ebook title="download our landscaping ebook" href="" />
+      {/* <Ebook title="download our landscaping ebook" href="" /> */}
       <MainTestimonials />
       <FaqFeatured />
       <Videos />

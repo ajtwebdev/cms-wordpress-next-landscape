@@ -1,8 +1,9 @@
 .wrapper {
-  .slider {
-    @media screen and (max-width: 70em) {
-      display: none;
-    }
+}
+
+.slider {
+  @media screen and (max-width: 70em) {
+    display: none;
   }
 }
 
