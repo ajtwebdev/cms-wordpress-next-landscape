@@ -4,6 +4,7 @@ import { ButtonPrimary, ButtonSecondaryLight } from "../../buttons";
 import { Actions, Container, HeroBannerPadding } from "../../layoutComponents";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
+import styles from "./PatioSlider.module.scss";
 
 const Wrapper = styled.div`
   padding-bottom: 4em;
@@ -91,15 +92,15 @@ const captionStyle = {
 
 export default function PatioSlider({ title }) {
   return (
-    <Wrapper>
+    <div className={styles.wrapper}>
       <HeroBannerPadding />
-      <HeroGrid>
-        <HeroWrapper>
+      <div className={styles.heroGrid}>
+        <div className={styles.heroWrapper}>
           <Carousel>
             <Carousel.Item interval={5000}>
-              <Content>
+              <div className={styles.content}>
                 <Content1 className="d-block w-100" />
-              </Content>
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <h1 className="title">
@@ -111,9 +112,9 @@ export default function PatioSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <Content>
+              <div className={styles.content}>
                 <Content2 className="d-block w-100" />
-              </Content>
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <h2 className="title">
@@ -125,9 +126,9 @@ export default function PatioSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <Content>
+              <div className={styles.content}>
                 <Content3 className="d-block w-100" />
-              </Content>
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <h2 className="title">take a step outdoors</h2>
@@ -139,8 +140,8 @@ export default function PatioSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-        </HeroWrapper>
-        <HeroBottomText>
+        </div>
+        <div className={styles.heroBottomText}>
           <Container>
             <p>
               Looking for Calgary hardscaping companies or patio builders? Look
@@ -152,8 +153,8 @@ export default function PatioSlider({ title }) {
               today to get started on your project.
             </p>
           </Container>
-        </HeroBottomText>
-      </HeroGrid>
-    </Wrapper>
+        </div>
+      </div>
+    </div>
   );
 }

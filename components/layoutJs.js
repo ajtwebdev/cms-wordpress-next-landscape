@@ -5,6 +5,7 @@ import ContactBanner from "./contactBanner";
 import Footer from "./footers/footer";
 import GoogleBadge from "./googleBadge";
 import HeaderBasic from "./headers/header";
+import Header from "./Header/Header";
 
 const Wrapper = styled.div`
   position: relative;
@@ -13,7 +14,8 @@ const Wrapper = styled.div`
 export default function LayoutJs({ children }) {
   return (
     <Wrapper>
-      <HeaderBasic />
+      <Header />
+      {/* <HeaderBasic /> */}
       <main>{children}</main>
       <GoogleBadge />
       <FinanceBanner />

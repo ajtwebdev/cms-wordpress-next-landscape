@@ -36,7 +36,7 @@ export default function ComponentC({ subheader, title, body, image }) {
   let height = "auto";
   return (
     <Section>
-      <Container className="spacing  ">
+      <Container className="spacing">
         <Text className="spacing">
           <div className="">
             <p className="subheader accent">{subheader}</p>

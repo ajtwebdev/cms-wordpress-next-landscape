@@ -65,11 +65,11 @@ export default function ReferForm(props) {
                   </label>
                 </p>
                 <div className="spacing-sm">
-                  <Label htmlFor="name">* Name:</Label>
+                  <Label htmlFor="referral-name">* Name:</Label>
                   <Input
-                    type="name"
-                    name="name"
-                    id="name"
+                    type="referral-name"
+                    name="referral-name"
+                    id="referral-name"
                     placeholder="Enter their full name"
                     required
                   />
@@ -77,9 +77,9 @@ export default function ReferForm(props) {
                 <div className="spacing-sm">
                   <Label htmlFor="email">* Phone:</Label>
                   <Input
-                    type="phone"
-                    name="phone"
-                    id="phone"
+                    type="referral-phone"
+                    name="referral-phone"
+                    id="referral-phone"
                     placeholder="Enter their phone"
                     required
                   />
@@ -87,9 +87,9 @@ export default function ReferForm(props) {
                 <div className="spacing-sm">
                   <Label htmlFor="email">* Email:</Label>
                   <Input
-                    type="email"
-                    name="email"
-                    id="email"
+                    type="referral-email"
+                    name="referral-email"
+                    id="referral-email"
                     placeholder="Enter their email"
                     required
                   />
