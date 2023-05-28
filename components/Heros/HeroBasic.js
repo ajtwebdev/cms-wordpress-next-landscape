@@ -123,8 +123,11 @@ export default function HeroBasic(props) {
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
-                  <h2 className="title">softscaping services</h2>
-                  <p className="subheader tan">Bring your backyard to life</p>
+                  <h2 className="title">hardscaping services</h2>
+                  <p className="subheader tan">
+                    create a stunning outdoor oasis with our hardscaping
+                    services
+                  </p>
                   <ButtonPrimary href="/residential-services/softscaping">
                     get started &#8594;
                   </ButtonPrimary>
