@@ -128,7 +128,7 @@ export default function HeroBasic(props) {
                     create a stunning outdoor oasis with our hardscaping
                     services
                   </p>
-                  <ButtonPrimary href="/residential-services/softscaping">
+                  <ButtonPrimary href="/residential-services/hardscaping">
                     get started &#8594;
                   </ButtonPrimary>
                 </div>

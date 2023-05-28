@@ -67,7 +67,9 @@ export default function ShowroomSection(props) {
                   <p className="bold upper">World Of Spas - 6201 Centre S</p>
                 </div>
               </Flex>
-              <ButtonPrimary href="/showroom">explore showroom</ButtonPrimary>
+              <ButtonPrimary href="/landscape-idea-center">
+                explore showroom
+              </ButtonPrimary>
             </Text>
           </FlexMobileOpp>
         </Container>
