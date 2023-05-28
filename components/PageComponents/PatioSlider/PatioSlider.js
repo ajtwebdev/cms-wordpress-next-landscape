@@ -27,15 +27,8 @@ export default function PatioSlider({ title }) {
         <div className={styles.heroWrapper}>
           <Carousel>
             <Carousel.Item interval={5000}>
-              <div className={styles.contentImg}>
-                <Image
-                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"
-                  alt="banner"
-                  height={height}
-                  width={width}
-                  className={styles.content1}
-                />
-                {/* <div className={styles.content1} /> */}
+              <div className={styles.content}>
+                <div className={styles.content1} />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -48,15 +41,8 @@ export default function PatioSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <div className={styles.contentImg}>
-                <Image
-                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"
-                  alt="banner"
-                  height={height}
-                  width={width}
-                  className={styles.content1}
-                />
-                {/* <div className={styles.content1} /> */}
+              <div className={styles.content}>
+                <div className={styles.content2} />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -69,15 +55,8 @@ export default function PatioSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <div className={styles.contentImg}>
-                <Image
-                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"
-                  alt="banner"
-                  height={height}
-                  width={width}
-                  className={styles.content1}
-                />
-                {/* <div className={styles.content1} /> */}
+              <div className={styles.content}>
+                <div className={styles.content3} />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
