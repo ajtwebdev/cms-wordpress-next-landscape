@@ -22,10 +22,10 @@ const Items = styled.div`
 export default function Videos() {
   return (
     <Wrapper>
-      <Section>
-        <Container>
+      <section>
+        <div className="container">
           <Items>
-            <Flex>
+            <div className="flex">
               <iframe
                 srcDoc="
         <style>
@@ -100,10 +100,10 @@ export default function Videos() {
                 }}
                 frameBorder={0}
               />
-            </Flex>
+            </div>
           </Items>
-        </Container>
-      </Section>
+        </div>
+      </section>
     </Wrapper>
   );
 }

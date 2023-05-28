@@ -27,13 +27,13 @@ export default function Badges() {
   };
   return (
     <div className={styles.wrapper}>
-      <Section>
+      <section>
         <div className="spacing">
-          <Container>
+          <div className="container">
             <h2 className="title center">
               top rated calgary landscaping company
             </h2>
-          </Container>
+          </div>
           <Slider className={styles.slider} {...settings}>
             <Image
               src="/badges/best-landscaping-companies-in-calgary-1.svg"
@@ -194,7 +194,7 @@ export default function Badges() {
             />
           </div>
         </div>
-      </Section>
+      </section>
     </div>
   );
 }

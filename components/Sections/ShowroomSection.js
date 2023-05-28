@@ -21,9 +21,9 @@ const ImgStyles = {
 export default function ShowroomSection(props) {
   return (
     <Wrapper>
-      <Section>
-        <Container>
-          <FlexMobileOpp>
+      <section>
+        <div className="container">
+          <div className="flexMobileOpp">
             <Image
               height={100}
               width={400}
@@ -58,7 +58,7 @@ export default function ShowroomSection(props) {
                 for landscaping services in Calgary.
               </p>
 
-              <Flex>
+              <div className="flex">
                 <div>
                   <p className="bold upper">
                     Backyard Canada - 711 48 Ave SE Unit 1
@@ -66,14 +66,14 @@ export default function ShowroomSection(props) {
                   <p className="bold upper">Patio Store - 533 58 Ave SE</p>
                   <p className="bold upper">World Of Spas - 6201 Centre S</p>
                 </div>
-              </Flex>
+              </div>
               <ButtonPrimary href="/landscape-idea-center">
                 explore showroom
               </ButtonPrimary>
             </Text>
-          </FlexMobileOpp>
-        </Container>
-      </Section>
+          </div>
+        </div>
+      </section>
     </Wrapper>
   );
 }

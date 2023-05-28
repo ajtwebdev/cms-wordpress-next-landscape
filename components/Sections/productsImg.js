@@ -13,9 +13,9 @@ const ImgStyle = {
 
 export default function ProductsImg(props) {
   return (
-    <Section>
-      <Container>
-        <Flex>
+    <section>
+      <div className="container">
+        <div className="flex">
           <Text className="spacing">
             <div>
               <h2 className="title">
@@ -54,8 +54,8 @@ export default function ProductsImg(props) {
             src="/calgary-landscaping-selection-guide-1.jpg"
             alt="calgary landscaping materials"
           />
-        </Flex>
-      </Container>
-    </Section>
+        </div>
+      </div>
+    </section>
   );
 }

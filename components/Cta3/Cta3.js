@@ -7,8 +7,8 @@ import styles from "./Cta3.module.scss";
 export default function Cta3() {
   return (
     <div className={styles.wrapper}>
-      <Section>
-        <Container>
+      <section>
+        <div className="container">
           <div className={styles.text}>
             <div className="spacing">
               <h2 className="title">your outdoor oasis is just a click away</h2>
@@ -17,8 +17,8 @@ export default function Cta3() {
               </ButtonSecondaryLight>
             </div>
           </div>
-        </Container>
-      </Section>
+        </div>
+      </section>
     </div>
   );
 }

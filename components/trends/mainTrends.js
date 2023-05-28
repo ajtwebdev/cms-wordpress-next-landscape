@@ -64,9 +64,9 @@ const Item = styled.div`
 
 export default function MainTrends() {
   return (
-    <Section>
+    <section>
       <div className="spacing">
-        <Container>
+        <div className="container">
           <Text className="spacing ">
             <div>
               {/* <p className="subheader accent">title for trends</p> */}
@@ -92,7 +92,7 @@ export default function MainTrends() {
               Calgary landscaping trends.
             </p>
           </Text>
-        </Container>
+        </div>
         <Grid>
           <Bg />
           <List>
@@ -150,6 +150,6 @@ export default function MainTrends() {
           </List>
         </Grid>
       </div>
-    </Section>
+    </section>
   );
 }

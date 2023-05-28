@@ -40,7 +40,7 @@ const Video = styled.div`
 
 export default function MainVideo() {
   return (
-    <Section>
+    <section>
       <div className="spacing-lg">
         <TextTop>
           <h2 className="subheader accent">
@@ -50,9 +50,9 @@ export default function MainVideo() {
             Welcome to a different kind of customer experience in outdoor living
           </h3>
         </TextTop>
-        <FlexMobileOpp className="spacing">
+        <div className="flexMobileOpp spacing">
           <Text>
-            <Container className="spacing">
+            <div className="container spacing">
               <div>
                 <h3 className="subheader">redefining landscaping in calgary</h3>
                 <p>
@@ -121,13 +121,13 @@ export default function MainVideo() {
                 </p>
               </div>
 
-              <Actions>
+              <div className="actions">
                 <ButtonPrimaryDark href="/contact">
                   get started
                 </ButtonPrimaryDark>
                 <ButtonPrimary href="/about">about us</ButtonPrimary>
-              </Actions>
-            </Container>
+              </div>
+            </div>
           </Text>
 
           <Grid>
@@ -141,8 +141,8 @@ export default function MainVideo() {
               />
             </Video>
           </Grid>
-        </FlexMobileOpp>
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }

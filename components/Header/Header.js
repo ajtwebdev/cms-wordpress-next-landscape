@@ -108,7 +108,7 @@ export default function HeaderBasic() {
     <div>
       <div className={styles.header}>
         <div className={styles.headertop}>
-          <Container>
+          <div className="container">
             <ul>
               <li>
                 <div className={styles.navLinkTop} href="tel: 403-257-4059">
@@ -142,11 +142,11 @@ export default function HeaderBasic() {
                 </div>
               </li>
             </ul>
-          </Container>
+          </div>
         </div>
 
         <div className={styles.headerbottom}>
-          <Container className={styles.container}>
+          <div className={styles.container}>
             <div className={styles.logoContainer}>
               <Link className={styles.styledLink} href="/">
                 <Image
@@ -563,7 +563,7 @@ export default function HeaderBasic() {
                 </li>
               </NavList>
             </nav>
-          </Container>
+          </div>
         </div>
       </div>
     </div>

@@ -26,16 +26,16 @@ const ServiceBox = (props) => {
 
 export default function AllServices() {
   return (
-    <Section className="spacing-lg">
-      <Container>
+    <section className="spacing-lg">
+      <div className="container">
         <div className={styles.text}>
           {/* <p className="subheader accent">find the service you need</p> */}
           <h2 className="title">
             take a closer look at our calgary landscaping services
           </h2>
         </div>
-      </Container>
-      <Container className="spacing">
+      </div>
+      <div className="container spacing">
         <h3 className="subheader accent center">
           popular hardscaping services
         </h3>
@@ -95,9 +95,9 @@ export default function AllServices() {
             text="water mgmt"
           />
         </div>
-      </Container>
+      </div>
       <div className={styles.wrapperDark}>
-        <Container>
+        <div className="container">
           <h3 className="subheader light center">
             popular softscaping services
           </h3>
@@ -133,9 +133,9 @@ export default function AllServices() {
               text="mulch & rock"
             />
           </div>
-        </Container>
+        </div>
       </div>
-      <Container>
+      <div className="container">
         <h3 className="subheader center accent">
           popular outdoor living services
         </h3>
@@ -207,7 +207,7 @@ export default function AllServices() {
             text="outdoor furniture"
           />
         </div>
-      </Container>
-    </Section>
+      </div>
+    </section>
   );
 }

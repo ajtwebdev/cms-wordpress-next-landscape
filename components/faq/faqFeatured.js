@@ -32,9 +32,9 @@ const AccordionStyle = {
 export default function FaqFeatured(props) {
   return (
     <Wrapper>
-      <Section>
-        <Container>
-          <FlexMobileOpp>
+      <section>
+        <div className="container">
+          <div className="flexMobileOpp">
             <Accordion className="spacing">
               <AccordionItem style={AccordionStyle}>
                 <h2>
@@ -255,9 +255,9 @@ export default function FaqFeatured(props) {
               </p>
               <ButtonPrimary href="/contact">get started</ButtonPrimary>
             </div>
-          </FlexMobileOpp>
-        </Container>
-      </Section>
+          </div>
+        </div>
+      </section>
     </Wrapper>
   );
 }

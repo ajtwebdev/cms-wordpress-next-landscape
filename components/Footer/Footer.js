@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer>
       <div className={styles.footerWrapperTop}>
-        <Container className="spacing">
+        <div className="container spacing">
           <div>
             <InstagramFeed />
           </div>
@@ -245,10 +245,10 @@ export default function Footer() {
             </div>
           </div>
           <hr />
-        </Container>
+        </div>
       </div>
       <div className={styles.footerWrapperBottom}>
-        <Container className="spacing-lg">
+        <div className="container spacing-lg">
           <div className={styles.pageLinks}>
             <div className={styles.flex}>
               <div>
@@ -595,7 +595,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className={styles.author}>
-            <Container>
+            <div className="container">
               <div>
                 <p>website by: </p>
                 <a target="_blank" href="https://www.aarontonner.com">
@@ -608,9 +608,9 @@ export default function Footer() {
                   />
                 </a>
               </div>
-            </Container>
+            </div>
           </div>
-        </Container>
+        </div>
       </div>
     </footer>
   );

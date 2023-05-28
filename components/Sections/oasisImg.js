@@ -16,9 +16,9 @@ const ImgStyle = {
 export default function OasisImg(props) {
   return (
     <Wrapper>
-      <Section>
-        <Container>
-          <Flex>
+      <section>
+        <div className="container">
+          <div className="flex">
             <Text className="spacing">
               <div>
                 <p className="subheader">{props.subheader}</p>
@@ -63,9 +63,9 @@ export default function OasisImg(props) {
               src="/calgary-landscaping-oasis.png"
               alt="best landscaper calgary, AB"
             />
-          </Flex>
-        </Container>
-      </Section>
+          </div>
+        </div>
+      </section>
     </Wrapper>
   );
 }

@@ -8,9 +8,9 @@ import styles from "./MainServices.module.scss";
 
 export default function MainServices() {
   return (
-    <Section>
+    <section>
       <div className="spacing">
-        <Container>
+        <div className="container">
           <div className={styles.text}>
             <div>
               {/* <p className="subheader accent">find the services you need</p> */}
@@ -40,7 +40,7 @@ export default function MainServices() {
               your residential landscaping needs.
             </p>
           </div>
-        </Container>
+        </div>
         <div className={styles.grid}>
           <div className={styles.list}>
             <div className={styles.item}>
@@ -98,6 +98,6 @@ export default function MainServices() {
           <div className={styles.bg} />
         </div>
       </div>
-    </Section>
+    </section>
   );
 }

@@ -25,8 +25,8 @@ const Wrapper = styled.div`
 
 export default function FinanceBanner() {
   return (
-    <Section>
-      <Container>
+    <section>
+      <div className="container">
         <Wrapper>
           <div>
             <p className="subheader">get the landscape financing you need</p>
@@ -46,7 +46,7 @@ export default function FinanceBanner() {
             height={100}
           />
         </Wrapper>
-      </Container>
-    </Section>
+      </div>
+    </section>
   );
 }

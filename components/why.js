@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export default function Why() {
   return (
-    <Section>
-      <Container className="spacing">
+    <section>
+      <div className="container spacing">
         <div>
           <p className="subheader accent">why choose project landscape</p>
           <h2 className="title">the best of Calgary landscaping companies</h2>
         </div>
-        <GridThree>
+        <div className="gridThree">
           <div className="spacing">
             <Image
               src="/calgary-landscaper-benefits.jpg"
@@ -141,11 +141,11 @@ export default function Why() {
               designer.
             </p>
           </div>
-        </GridThree>
+        </div>
         <center>
           <ButtonPrimary href="/contact">get started</ButtonPrimary>
         </center>
-      </Container>
-    </Section>
+      </div>
+    </section>
   );
 }

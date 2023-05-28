@@ -48,8 +48,8 @@ const StyledLink = styled((props) => <Link {...props} />)`
 export default function ContactBanner() {
   return (
     <Wrapper>
-      <Container>
-        <GridThree>
+      <div className="container">
+        <div className="gridThree">
           <Item className="spacing">
             <VscWorkspaceTrusted style={IconStyle} />
             <StyledLink href="/about">trusted care</StyledLink>
@@ -77,8 +77,8 @@ export default function ContactBanner() {
               construction needs the right way.
             </p>
           </Item>
-        </GridThree>
-      </Container>
+        </div>
+      </div>
     </Wrapper>
   );
 }

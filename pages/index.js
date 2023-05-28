@@ -54,9 +54,9 @@ export default function Index() {
       <MainServices />
       <AllServices />
       <Wrapper>
-        <Section>
-          <Container>
-            <Flex>
+        <section>
+          <div className="container">
+            <div className="flex">
               <div>
                 <h2 className="title tan">
                   Discover why Project Landscape is the largest residential
@@ -124,9 +124,9 @@ export default function Index() {
                   among homeowners in Calgary.
                 </p>
               </div>
-            </Flex>
-          </Container>
-        </Section>
+            </div>
+          </div>
+        </section>
       </Wrapper>
       <Cta3 />
       <ProductsImg />

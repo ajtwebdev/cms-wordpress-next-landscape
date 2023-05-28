@@ -78,8 +78,8 @@ export default function MainTestimonials() {
   };
   return (
     <Wrapper>
-      <Section>
-        <Container>
+      <section>
+        <div className="container">
           <SliderWrapper>
             <Slider {...settings}>
               <ReviewBox
@@ -99,8 +99,8 @@ export default function MainTestimonials() {
               />
             </Slider>
           </SliderWrapper>
-        </Container>
-      </Section>
+        </div>
+      </section>
     </Wrapper>
   );
 }

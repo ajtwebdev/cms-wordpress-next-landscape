@@ -1,5 +1,5 @@
 import { AppProps } from "next/app"
-import "../styles/index.css"
+import "../styles/index.scss"
 import Seo from "../components/seo"
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -24,9 +24,9 @@ const ImgStyles = {
 export default function LandscapingImg(props) {
   return (
     <Wrapper>
-      <Section>
-        <Container>
-          <FlexMobileOpp>
+      <section>
+        <div className="container">
+          <div className="flexMobileOpp">
             <Image
               style={ImgStyles}
               height={400}
@@ -60,9 +60,9 @@ export default function LandscapingImg(props) {
                 {props.button}
               </ButtonSecondaryLight>
             </Text>
-          </FlexMobileOpp>
-        </Container>
-      </Section>
+          </div>
+        </div>
+      </section>
     </Wrapper>
   );
 }
