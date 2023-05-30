@@ -1,15 +1,15 @@
-import Image from "components/Image/Image";
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import { ButtonUnderline, ButtonInline } from "../buttons";
 import { Container, Section } from "../layoutComponents";
 import Link from "next/link";
 import styles from "./MainServices.module.scss";
+import hardscapingImg from "../../public/hardscaping-calgary.jpg";
+import softscapingImg from "../../public/softscaping-calgary.jpg";
+import outdoorImg from "../../public/outdoor-living-calgary.jpg";
 
 export default function MainServices() {
-  let width = "100%";
-  let height = "400px";
-
   return (
     <section>
       <div className="spacing">
@@ -48,9 +48,9 @@ export default function MainServices() {
           <div className={styles.list}>
             <div className={styles.item}>
               <Image
-                height={height}
-                width={width}
-                src="/hardscaping-calgary.jpg"
+                height={100}
+                width={600}
+                src={hardscapingImg}
                 alt="calgary hardscaping services"
               />
               <div>
@@ -65,9 +65,9 @@ export default function MainServices() {
             </div>
             <div className={styles.item}>
               <Image
-                height={height}
-                width={width}
-                src="/softscaping-calgary.jpg"
+                height={600}
+                width={600}
+                src={softscapingImg}
                 alt="calgary softscaping services"
               />
               <div>
@@ -82,9 +82,9 @@ export default function MainServices() {
             </div>
             <div className={styles.item}>
               <Image
-                height={height}
-                width={width}
-                src="/outdoor-living-calgary.jpg"
+                height={600}
+                width={600}
+                src={outdoorImg}
                 alt="outdoor landscaping services calgary"
               />
               <div>

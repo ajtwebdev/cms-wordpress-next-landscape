@@ -6,6 +6,16 @@ import Link from "next/link";
 import { ButtonPrimary } from "../buttons";
 import styles from "./AllServices.module.scss";
 
+import paversImg from "../../public/calgary-pavers.jpg";
+import retainingImg from "../../public/retaining-walls-landscaper-calgary.png";
+import gardenwallImg from "../../public/garden-walls-calgary-landscaping.png";
+import edgingImg from "../../public/garden-walls-calgary-landscaper.png";
+import curbingImg from "../../public/calgary-curbing.png";
+import stairsImg from "../../public/calgary-stairs.png";
+import seatsImg from "../../public/seat-walls-landscaper-calgary.png";
+import concreteImg from "../../public/calgary-concrete.jpg";
+import waterImg from "../../public/water-mgmt-calgary-landscaping.webp";
+
 const ServiceBox = (props) => {
   return (
     <div className={styles.item}>
@@ -41,55 +51,55 @@ export default function AllServices() {
         </h3>
         <div className={styles.gridAuto}>
           <ServiceBox
-            src="/calgary-pavers.jpg"
+            src={paversImg}
             alt="calgary landscaping services"
             href="/residential-services/landscape-construction/patio-surfaces"
             text="pavers"
           />
           <ServiceBox
-            src="/retaining-walls-landscaper-calgary.png"
+            src={retainingImg}
             alt="calgary landscaping services"
             href="/residential-services/landscape-construction/retaining-walls"
             text="retaining walls"
           />
           <ServiceBox
-            src="/garden-walls-calgary-landscaping.png"
+            src={gardenwallImg}
             alt="calgary landscaping services"
             href="/residential-services/outdoor-living/garden-walls"
             text="garden walls"
           />
           <ServiceBox
-            src="/garden-walls-calgary-landscaper.png"
+            src={edgingImg}
             alt="calgary landscaping services"
             href="/residential-services/hardscaping/garden-bed-edging"
             text="edging"
           />
           <ServiceBox
-            src="/calgary-curbing.png"
+            src={curbingImg}
             alt="calgary landscaping services"
             href="/concrete-curbing"
             text="curbing"
           />
           <ServiceBox
-            src="/calgary-stairs.png"
+            src={stairsImg}
             alt="calgary landscaping services"
             href="/staircases-stepping-stones"
             text="stairs & stepping stones"
           />
           <ServiceBox
-            src="/seat-walls-landscaper-calgary.png"
+            src={seatsImg}
             alt="calgary landscaping services"
             href="/residential-services/landscape-construction/seating"
             text="seat walls"
           />
           <ServiceBox
-            src="/calgary-concrete.jpg"
+            src={concreteImg}
             alt="calgary landscaping services"
             href="/residential-services/concrete-installations"
             text="concrete"
           />
           <ServiceBox
-            src="/water-mgmt-calgary-landscaping.webp"
+            src={waterImg}
             alt="calgary landscaping services"
             href="/residential-services/hardscaping/water-management"
             text="water mgmt"
