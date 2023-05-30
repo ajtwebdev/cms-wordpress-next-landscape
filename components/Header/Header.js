@@ -108,7 +108,7 @@ export default function HeaderBasic() {
     <div>
       <div className={styles.header}>
         <div className={styles.headertop}>
-          <div className="container">
+          <div className={styles.containerTop}>
             <ul>
               <li>
                 <div className={styles.navLinkTop} href="tel: 403-257-4059">

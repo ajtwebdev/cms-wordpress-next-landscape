@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "components/Image/Image";
 import React from "react";
 import styled from "styled-components";
 import { ButtonUnderline, ButtonInline } from "../buttons";
@@ -7,6 +7,9 @@ import Link from "next/link";
 import styles from "./MainServices.module.scss";
 
 export default function MainServices() {
+  let width = "100%";
+  let height = "400px";
+
   return (
     <section>
       <div className="spacing">
@@ -45,8 +48,8 @@ export default function MainServices() {
           <div className={styles.list}>
             <div className={styles.item}>
               <Image
-                height={600}
-                width={600}
+                height={height}
+                width={width}
                 src="/hardscaping-calgary.jpg"
                 alt="calgary hardscaping services"
               />
@@ -62,8 +65,8 @@ export default function MainServices() {
             </div>
             <div className={styles.item}>
               <Image
-                height={600}
-                width={600}
+                height={height}
+                width={width}
                 src="/softscaping-calgary.jpg"
                 alt="calgary softscaping services"
               />
@@ -79,8 +82,8 @@ export default function MainServices() {
             </div>
             <div className={styles.item}>
               <Image
-                height={600}
-                width={600}
+                height={height}
+                width={width}
                 src="/outdoor-living-calgary.jpg"
                 alt="outdoor landscaping services calgary"
               />

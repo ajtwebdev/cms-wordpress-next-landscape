@@ -5,6 +5,7 @@ import ContactBanner from "./contactBanner";
 import Footer from "./Footer/Footer";
 import GoogleBadge from "./googleBadge";
 import Header from "./Header/Header";
+import RecentPosts from "./recentPosts";
 
 const Wrapper = styled.div`
   position: relative;
