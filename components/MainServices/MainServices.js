@@ -51,7 +51,8 @@ export default function MainServices() {
                 height={100}
                 width={600}
                 // src={hardscapingImg}
-                src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+                // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
                 alt="calgary hardscaping services"
               />
               <div>
@@ -69,7 +70,8 @@ export default function MainServices() {
                 height={600}
                 width={600}
                 // src={softscapingImg}
-                src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+                // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
                 alt="calgary softscaping services"
               />
               <div>
@@ -87,7 +89,8 @@ export default function MainServices() {
                 height={600}
                 width={600}
                 // src={outdoorImg}
-                src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+                // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
                 alt="outdoor landscaping services calgary"
               />
               <div>

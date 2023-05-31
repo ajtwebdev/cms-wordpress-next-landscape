@@ -17,8 +17,8 @@ module.exports = {
     ],
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "21-pl.purpleparrotwebsites.com",
+        protocol: "https",
+        hostname: "res.cloudinary.com",
         port: "",
       },
     ],

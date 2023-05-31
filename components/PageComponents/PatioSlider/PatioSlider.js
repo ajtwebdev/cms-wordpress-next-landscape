@@ -26,7 +26,8 @@ export default function PatioSlider({ title }) {
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
                 <Image
-                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"
+                  // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
                   width={1200}
                   height={100}
                   priority={true}
@@ -46,7 +47,8 @@ export default function PatioSlider({ title }) {
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
                 <Image
-                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-2.png"
+                  // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-2.png"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
                   width={1200}
                   height={100}
                   priority={true}
@@ -66,7 +68,8 @@ export default function PatioSlider({ title }) {
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
                 <Image
-                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+                  // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
                   width={1200}
                   height={100}
                   priority={true}

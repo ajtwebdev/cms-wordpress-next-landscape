@@ -24,7 +24,7 @@ const ServiceBox = (props) => {
         height={100}
         width={600}
         // src={props.src}
-        src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+        src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
         alt={props.alt}
       />
       <Link className={styles.styledLink} href={props.href}>
