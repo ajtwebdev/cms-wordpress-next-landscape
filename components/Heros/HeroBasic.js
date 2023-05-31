@@ -4,6 +4,7 @@ import { ButtonInline, ButtonPrimary } from "../buttons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import styles from "./HeroBasic.module.scss";
+import Image from "next/image";
 
 const captionStyle = {
   textAlign: "left",
@@ -16,6 +17,8 @@ const captionStyle = {
 };
 
 export default function HeroBasic(props) {
+  let width = "100%";
+  let height = "auto";
   return (
     <div className={styles.wrapper}>
       <div className="heroBannerPadding" />
@@ -24,7 +27,13 @@ export default function HeroBasic(props) {
           <Carousel>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <div className={styles.content1} />
+                <Image
+                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/outdoor-living-slider.webp"
+                  width={100}
+                  height={100}
+                  priority={true}
+                />
+                {/* <div className={styles.content1} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -38,7 +47,13 @@ export default function HeroBasic(props) {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <div className={styles.content2} />
+                <Image
+                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hardscaping-slider.webp"
+                  width={100}
+                  height={100}
+                  priority={true}
+                />
+                {/* <div className={styles.content2} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -55,7 +70,13 @@ export default function HeroBasic(props) {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <div className={styles.content3} />
+                <Image
+                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/softscaping-slider-1.webp"
+                  width={100}
+                  height={100}
+                  priority={true}
+                />
+                {/* <div className={styles.content3} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">

@@ -15,5 +15,12 @@ module.exports = {
       "2.gravatar.com",
       "secure.gravatar.com",
     ],
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "21-pl.purpleparrotwebsites.com",
+        port: "",
+      },
+    ],
   },
 };
