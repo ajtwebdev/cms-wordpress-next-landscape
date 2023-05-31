@@ -8,81 +8,8 @@ import {
 } from "components/layoutComponents";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
-
-const Wrapper = styled.div`
-  padding-bottom: 4em;
-  p {
-    margin-bottom: 0;
-  }
-
-  .carousel-indicators {
-    margin-bottom: 4rem;
-  }
-`;
-
-const HeroGrid = styled.div`
-  display: grid;
-  grid-template-rows: auto 4em auto;
-`;
-
-const HeroWrapper = styled.div`
-  grid-row: 1 / span 2;
-  grid-column: 1 / -1;
-  z-index: 1;
-`;
-
-const HeroBottomText = styled.div`
-  grid-row: 2 / -1;
-  grid-column: 1 / -1;
-  z-index: 2;
-
-  background: var(--clr-dark);
-  color: var(--txt-light);
-  padding: 2em;
-  width: 80%;
-`;
-
-const Content = styled.div`
-  position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    background: rgba(0, 0, 0, 0.1);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-`;
-
-const Content1 = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"),
-    rgba(0, 0, 0, 0.4);
-  background-blend-mode: overlay;
-  background-position: center;
-  height: 85vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-`;
-const Content2 = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-3.webp"),
-    rgba(0, 0, 0, 0.4);
-  background-blend-mode: overlay;
-  background-position: center;
-  height: 85vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-`;
-const Content3 = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-1.webp"),
-    rgba(0, 0, 0, 0.4);
-  background-blend-mode: overlay;
-  background-position: center;
-  height: 85vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-`;
+import styles from "./HeroSlider.module.scss";
+import Image from "next/image";
 
 const captionStyle = {
   textAlign: "left",
@@ -95,14 +22,21 @@ const captionStyle = {
 
 export default function HeroSlider({ title }) {
   return (
-    <Wrapper>
-      <HeroGrid>
-        <HeroWrapper>
+    <div className={styles.wrapper}>
+      <div className="heroBannerPadding" />
+      <div className={styles.heroWrapper}>
+        <div className={styles.heroGrid}>
           <Carousel>
             <Carousel.Item interval={5000}>
-              <Content>
-                <Content1 className="d-block w-100" />
-              </Content>
+              <div className={styles.content}>
+                <Image
+                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"
+                  width={1200}
+                  height={100}
+                  priority={true}
+                />
+                {/* <div className={styles.content1} /> */}
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <h1 className="title">calgary's premier deck builder</h1>
@@ -112,9 +46,15 @@ export default function HeroSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <Content>
-                <Content2 className="d-block w-100" />
-              </Content>
+              <div className={styles.content}>
+                <Image
+                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-3.webp"
+                  width={1200}
+                  height={100}
+                  priority={true}
+                />
+                {/* <div className={styles.content2} /> */}
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <h2 className="title">expand your outdoor living</h2>
@@ -124,9 +64,15 @@ export default function HeroSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <Content>
-                <Content3 className="d-block w-100" />
-              </Content>
+              <div className={styles.content}>
+                <Image
+                  src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-1.webp"
+                  width={1200}
+                  height={100}
+                  priority={true}
+                />
+                {/* <div className={styles.content3} /> */}
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <h2 className="title">take a step outdoors</h2>
@@ -138,9 +84,9 @@ export default function HeroSlider({ title }) {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-        </HeroWrapper>
-        <HeroBottomText>
-          <Container>
+        </div>
+        <div className={styles.heroBottomText}>
+          <div className="container">
             <p>
               If you're in search of a Calgary deck builder near you, look no
               further than Project Landscape. We offer a wide range of colors,
@@ -148,10 +94,9 @@ export default function HeroSlider({ title }) {
               appeal of your deck. Let Project Landscape help you build the
               outdoor living space of your dreams!
             </p>
-          </Container>
-        </HeroBottomText>
-        ;
-      </HeroGrid>
-    </Wrapper>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

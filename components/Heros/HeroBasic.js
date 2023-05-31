@@ -29,7 +29,7 @@ export default function HeroBasic(props) {
               <div className={styles.content}>
                 <Image
                   src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/outdoor-living-slider.webp"
-                  width={100}
+                  width={1200}
                   height={100}
                   priority={true}
                 />
@@ -49,7 +49,7 @@ export default function HeroBasic(props) {
               <div className={styles.content}>
                 <Image
                   src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hardscaping-slider.webp"
-                  width={100}
+                  width={1200}
                   height={100}
                   priority={true}
                 />
@@ -72,7 +72,7 @@ export default function HeroBasic(props) {
               <div className={styles.content}>
                 <Image
                   src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/softscaping-slider-1.webp"
-                  width={100}
+                  width={1200}
                   height={100}
                   priority={true}
                 />

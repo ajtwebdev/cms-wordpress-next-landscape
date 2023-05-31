@@ -21,8 +21,8 @@
 }
 
 .heroBottomText {
-  grid-row: 2 / -1;
-  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  grid-column: 2 / -1;
   z-index: 2;
 
   background: var(--clr-dark);
@@ -52,37 +52,29 @@
 }
 
 .content1 {
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"),
-    rgba(0, 0, 0, 0.2);
+  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"),
+    rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay;
   background-position: center;
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
-  display: block !important;
-  width: 100% !important;
 }
-
 .content2 {
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-2.png"),
-    rgba(0, 0, 0, 0.2);
+  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-3.webp"),
+    rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay;
   background-position: center;
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
-  display: block !important;
-  width: 100% !important;
 }
-
 .content3 {
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"),
-    rgba(0, 0, 0, 0.2);
+  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-1.webp"),
+    rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay;
   background-position: center;
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
-  display: block !important;
-  width: 100% !important;
 }
