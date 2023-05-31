@@ -5,9 +5,9 @@ import { ButtonUnderline, ButtonInline } from "../buttons";
 import { Container, Section } from "../layoutComponents";
 import Link from "next/link";
 import styles from "./MainServices.module.scss";
-import hardscapingImg from "../../public/hardscaping-calgary.jpg";
-import softscapingImg from "../../public/softscaping-calgary.jpg";
-import outdoorImg from "../../public/outdoor-living-calgary.jpg";
+import hardscapingImg from "../../public/hardscaping-calgary.webp";
+import softscapingImg from "../../public/softscaping-calgary.webp";
+import outdoorImg from "../../public/outdoor-living-calgary.webp";
 
 export default function MainServices() {
   return (

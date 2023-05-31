@@ -10,10 +10,10 @@ import paversImg from "../../public/calgary-pavers.jpg";
 import retainingImg from "../../public/retaining-walls-landscaper-calgary.png";
 import gardenwallImg from "../../public/garden-walls-calgary-landscaping.png";
 import edgingImg from "../../public/garden-walls-calgary-landscaper.png";
-import curbingImg from "../../public/calgary-curbing.png";
-import stairsImg from "../../public/calgary-stairs.png";
-import seatsImg from "../../public/seat-walls-landscaper-calgary.png";
-import concreteImg from "../../public/calgary-concrete.jpg";
+import curbingImg from "../../public/calgary-curbing.webp";
+import stairsImg from "../../public/calgary-stairs.webp";
+import seatsImg from "../../public/seat-walls-landscaper-calgary.webp";
+import concreteImg from "../../public/calgary-concrete.webp";
 import waterImg from "../../public/water-mgmt-calgary-landscaping.webp";
 
 const ServiceBox = (props) => {
