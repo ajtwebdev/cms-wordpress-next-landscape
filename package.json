@@ -42,6 +42,7 @@
     "react-slick": "^0.29.0",
     "rss": "^1.2.2",
     "sass": "^1.62.1",
+    "sharp": "^0.32.1",
     "slick-carousel": "^1.8.1",
     "style.css": "^1.0.3",
     "styled-components": "^5.3.10",
