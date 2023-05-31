@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "../Image/Image";
 import React from "react";
 import styled from "styled-components";
 import { Container, Section } from "../layoutComponents";
@@ -23,7 +23,8 @@ const ServiceBox = (props) => {
         className={styles.serviceImg}
         height={100}
         width={600}
-        src={props.src}
+        // src={props.src}
+        src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
         alt={props.alt}
       />
       <Link className={styles.styledLink} href={props.href}>

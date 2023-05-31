@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "../Image/Image";
 import React from "react";
 import styled from "styled-components";
 import { ButtonUnderline, ButtonInline } from "../buttons";
@@ -50,7 +50,8 @@ export default function MainServices() {
               <Image
                 height={100}
                 width={600}
-                src={hardscapingImg}
+                // src={hardscapingImg}
+                src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
                 alt="calgary hardscaping services"
               />
               <div>
@@ -67,7 +68,8 @@ export default function MainServices() {
               <Image
                 height={600}
                 width={600}
-                src={softscapingImg}
+                // src={softscapingImg}
+                src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
                 alt="calgary softscaping services"
               />
               <div>
@@ -84,7 +86,8 @@ export default function MainServices() {
               <Image
                 height={600}
                 width={600}
-                src={outdoorImg}
+                // src={outdoorImg}
+                src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
                 alt="outdoor landscaping services calgary"
               />
               <div>
