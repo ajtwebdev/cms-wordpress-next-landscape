@@ -31,7 +31,7 @@ export default function LandscapingImg(props) {
               style={ImgStyles}
               height={400}
               width={800}
-              src="/banner-image-2.jpg"
+              src="https://res.cloudinary.com/di7j408eq/image/upload/v1685660006/banner-image-2_xmwxpx.jpg"
               alt="landscaping services in calgary AB"
             />
 

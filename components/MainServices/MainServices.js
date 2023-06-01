@@ -50,12 +50,10 @@ export default function MainServices() {
               <Image
                 height={100}
                 width={600}
-                // src={hardscapingImg}
-                // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
-                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658578/hardscaping-calgary_mjyioi.webp"
                 alt="calgary hardscaping services"
               />
-              <div>
+              <div className={styles.itemText}>
                 <h3 className="subheader">hardscaping</h3>
                 <ButtonUnderline
                   className="service-button"
@@ -69,12 +67,10 @@ export default function MainServices() {
               <Image
                 height={600}
                 width={600}
-                // src={softscapingImg}
-                // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
-                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658588/outdoor-living-calgary_fhbpev.webp"
                 alt="calgary softscaping services"
               />
-              <div>
+              <div className={styles.itemText}>
                 <h3 className="subheader">softscaping</h3>
                 <ButtonUnderline
                   className="service-button"
@@ -88,12 +84,10 @@ export default function MainServices() {
               <Image
                 height={600}
                 width={600}
-                // src={outdoorImg}
-                // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
-                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658588/outdoor-living-calgary_fhbpev.webp"
                 alt="outdoor landscaping services calgary"
               />
-              <div>
+              <div className={styles.itemText}>
                 <h3 className="subheader">outdoor living</h3>
                 <ButtonUnderline
                   className="service-button"

@@ -51,7 +51,7 @@ export default function ProductsImg(props) {
             height={100}
             width={400}
             style={ImgStyle}
-            src="/calgary-landscaping-selection-guide-1.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659915/calgary-landscaping-selection-guide-1_g3knih.jpg"
             alt="calgary landscaping materials"
           />
         </div>

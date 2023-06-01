@@ -42,11 +42,11 @@
   background: var(--clr-dark);
   color: var(--txt-light);
 
-  div {
-    padding: 1em;
-  }
-
   &:hover {
     color: var(--txt-light);
   }
+}
+
+.itemText {
+  padding: 1em;
 }

@@ -136,7 +136,7 @@ export default function MainVideo() {
               <Image
                 height={400}
                 width={800}
-                src="/calgary-landscaping-experience.png"
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659967/calgary-landscaping-experience_zjnlnw.png"
                 alt="best landscaping company in calgary, AB"
               />
             </Video>

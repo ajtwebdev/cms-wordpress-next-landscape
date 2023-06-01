@@ -23,7 +23,7 @@ import Seo from "../components/seo";
 import MainServices from "../components/MainServices/MainServices";
 
 const Wrapper = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hardscaping-slider.webp"),
+  background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
     rgba(0, 0, 0, 0.8);
   background-blend-mode: overlay;
   background-position: center;

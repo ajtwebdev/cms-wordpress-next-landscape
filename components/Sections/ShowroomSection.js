@@ -28,7 +28,7 @@ export default function ShowroomSection(props) {
               height={100}
               width={400}
               style={ImgStyles}
-              src="/calgary-landscaping-showroom-banner.png"
+              src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659853/calgary-landscaping-showroom-banner_tamdfs.png"
               alt="calgary landscaping showroom"
             />
             <Text className="spacing">

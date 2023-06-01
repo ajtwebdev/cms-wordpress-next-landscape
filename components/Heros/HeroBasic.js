@@ -28,7 +28,6 @@ export default function HeroBasic(props) {
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
                 <Image
-                  // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/outdoor-living-slider.webp"
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   width={1200}
                   height={100}
@@ -49,8 +48,7 @@ export default function HeroBasic(props) {
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
                 <Image
-                  // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hardscaping-slider.webp"
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                   width={1200}
                   height={100}
                   priority={true}
@@ -73,8 +71,7 @@ export default function HeroBasic(props) {
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
                 <Image
-                  // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/softscaping-slider-1.webp"
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                   width={1200}
                   height={100}
                   priority={true}
