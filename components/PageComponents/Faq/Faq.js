@@ -36,9 +36,9 @@ export default function FaqFeatured({ title, body, questions }) {
         <Container>
           <FlexMobileOpp>
             <Accordion className="spacing">
-              {questions.map((item) => {
+              {questions.map((item,index) => {
                 return (
-                  <AccordionItem style={AccordionStyle}>
+                  <AccordionItem style={AccordionStyle} key={index}>
                     <h2>
                       <AccordionButton style={AccordionStyle}>
                         <Box
@@ -67,15 +67,13 @@ export default function FaqFeatured({ title, body, questions }) {
                 <p className="subheader tan">learn from the leaders</p>
                 <h2 className="title">frequently asked questions</h2>
               </div>
-              <p>
-                {body ? (
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: `${body}`,
-                    }}
-                  />
-                ) : null}
-              </p>
+              {body ? (
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: `${body}`,
+                  }}
+                />
+              ) : null}
               <ButtonPrimary href="/contact">book a service</ButtonPrimary>
             </div>
           </FlexMobileOpp>

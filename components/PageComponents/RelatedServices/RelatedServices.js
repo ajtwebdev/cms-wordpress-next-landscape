@@ -75,9 +75,9 @@ export default function RelatedServices({ serviceContent }) {
           </div>
         </Text>
         <GridAuto>
-          {serviceContent.map((item) => {
+          {serviceContent.map((item,index) => {
             return (
-              <Item>
+              <Item key={index}>
                 <Image
                   alt={item.image.altText || ""}
                   srcSet={item.image.srcSet}

@@ -129,9 +129,9 @@ export default function ComponentB({ subheader, title, body, componentItems }) {
         </Container>
         <Grid>
           <List>
-            {componentItems.map((item) => {
+            {componentItems.map((item,index) => {
               return (
-                <Item>
+                <Item key={index}>
                   <Image
                     alt={item.image.altText || ""}
                     srcSet={item.image.srcSet}

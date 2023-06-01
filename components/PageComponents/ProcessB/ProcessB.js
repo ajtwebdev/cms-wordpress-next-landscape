@@ -70,9 +70,9 @@ export default function ProcessB({ title, subheader, body, processContent }) {
           </Text>
           <Container>
             <GridAuto>
-              {processContent.map(item => {
+              {processContent.map((item,index) => {
                 return (
-                  <ProcessItem>
+                  <ProcessItem key={index}>
                     <h3>{item.number}</h3>
                     <div
                       dangerouslySetInnerHTML={{
