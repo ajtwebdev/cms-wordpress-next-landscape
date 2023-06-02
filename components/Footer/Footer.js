@@ -21,9 +21,9 @@ export default function Footer() {
     <footer>
       <div className={styles.footerWrapperTop}>
         <div className="container spacing">
-          {/* <div>
+          <div>
             <InstagramFeed />
-          </div> */}
+          </div>
           <div className={styles.flex}>
             <div className={styles.flex}>
               <div className="spacing">

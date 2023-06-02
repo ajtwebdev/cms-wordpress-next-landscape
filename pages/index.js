@@ -52,7 +52,7 @@ export default function Index() {
       <HeroBasic />
       <Badges />
       <MainServices />
-      {/* <AllServices /> */}
+      <AllServices />
       <Wrapper>
         <section>
           <div className="container">
