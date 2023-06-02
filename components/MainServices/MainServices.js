@@ -67,7 +67,7 @@ export default function MainServices() {
               <Image
                 height={600}
                 width={600}
-                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658588/outdoor-living-calgary_fhbpev.webp"
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658902/softscaping-calgary_tnjycp.webp"
                 alt="calgary softscaping services"
               />
               <div className={styles.itemText}>

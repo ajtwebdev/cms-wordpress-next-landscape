@@ -31,7 +31,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   width={1200}
                   height={100}
-                  priority={true}
+                  // priority={true}
                 />
                 {/* <div className={styles.content1} /> */}
               </div>
@@ -51,7 +51,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                   width={1200}
                   height={100}
-                  priority={true}
+                  // priority={true}
                 />
                 {/* <div className={styles.content2} /> */}
               </div>
@@ -74,7 +74,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                   width={1200}
                   height={100}
-                  priority={true}
+                  // priority={true}
                 />
                 {/* <div className={styles.content3} /> */}
               </div>

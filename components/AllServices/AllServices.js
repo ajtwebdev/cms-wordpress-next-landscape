@@ -21,10 +21,9 @@ const ServiceBox = (props) => {
     <div className={styles.item}>
       <Image
         className={styles.serviceImg}
-        height={100}
+        height={600}
         width={600}
-        // src={props.src}
-        src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516113/cld-sample-2.jpg"
+        src={props.src}
         alt={props.alt}
       />
       <Link className={styles.styledLink} href={props.href}>
@@ -52,25 +51,25 @@ export default function AllServices() {
         </h3>
         <div className={styles.gridAuto}>
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658807/calgary-pavers_gqmy3b.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685735838/calgary-pavers_za64ny.webp"
             alt="calgary landscaping services"
             href="/residential-services/landscape-construction/patio-surfaces"
             text="pavers"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658852/retaining-walls-landscaper-calgary_jpevsl.png"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685735838/retaining-walls-landscaper-calgary_bia36x.webp"
             alt="calgary landscaping services"
             href="/residential-services/landscape-construction/retaining-walls"
             text="retaining walls"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658873/garden-walls-calgary-landscaping_igs3yi.png"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685735839/garden-walls-calgary-landscaping_w5ggwo.webp"
             alt="calgary landscaping services"
             href="/residential-services/outdoor-living/garden-walls"
             text="garden walls"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658882/garden-walls-calgary-landscaper_vxqb90.png"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685735840/garden-walls-calgary-landscaper_ybhe3f.webp"
             alt="calgary landscaping services"
             href="/residential-services/hardscaping/garden-bed-edging"
             text="edging"
@@ -82,7 +81,7 @@ export default function AllServices() {
             text="curbing"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658903/stairs-calgary-landscaper_kvbbto.png"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685735839/stairs-calgary-landscaper_twpw62.webp"
             alt="calgary landscaping services"
             href="/staircases-stepping-stones"
             text="stairs & stepping stones"
@@ -128,13 +127,13 @@ export default function AllServices() {
             <ServiceBox
               href="/residential-services/landscape-construction/sod-installation"
               alt="calgary landscaping services"
-              src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658902/sod-landscaper_tkkfiy.jpg"
+              src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736204/sod-landscaper_kiti8c.webp"
               text="sod"
             />
             <ServiceBox
               href="/residential-services/landscape-construction/tree-shrub-planting"
               alt="calgary landscaping services"
-              src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658903/tree-landscaping-calgary_rpzdfe.jpg"
+              src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736204/tree-landscaping-calgary_os3ocw.webp"
               text="shrubs & trees"
             />
             <ServiceBox
@@ -152,67 +151,67 @@ export default function AllServices() {
         </h3>
         <div className={styles.gridAuto}>
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659379/calgary-decks_kmnx7a.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736600/calgary-decks_n5n0el.webp"
             alt="calgary landscaping services"
             href="/decks-calgary"
             text="decks"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659420/pergola-2_kij2uh.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736600/pergola-2_secjyk.webp"
             alt="calgary landscaping services"
             href="/gazebos-pergolas"
             text="pergolas"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659456/lighting-calgary-landscaper_ouuakb.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736376/lighting-calgary-landscaper_nj2pps.webp"
             alt="calgary landscaping services"
             href="/landscape-lighting-services-calgary"
             text="lighting"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659493/calgary-lighting_zeebwi.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736374/calgary-lighting_ndhyo6.webp"
             alt="calgary landscaping services"
             href="/landscape-design"
             text="design"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658904/water-feature-landscaper_yre5na.png"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736600/water-feature-landscaper_xs8lp7.webp"
             alt="calgary landscaping services"
             href="/residential-services/water-features"
             text="water features"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659551/fire-pits-2_ahchcb.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736600/fire-pits-2_aldxxk.webp"
             alt="calgary landscaping services"
             href="/residential-services/landscape-construction/fire-pits-fire-places"
             text="fire pits"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659587/fence-landscaping-calgary_aqrb6e.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736600/fence-landscaping-calgary_jc7l8l.webp"
             alt="calgary landscaping services"
             href="/fence-contractor-in-calgary"
             text="fences"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659622/screens-landscaper_tkz2he.png"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736600/screens-landscaper_zckisx.webp"
             alt="calgary landscaping services"
             href="/privacy-screens"
             text="privacy screens"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659649/calgary-landscaping-railings_n62syr.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736772/calgary-landscaping-railings_gkdkgl.webp"
             alt="calgary landscaping services"
             href="/railings"
             text="deck railings"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659686/calgary-outdoor-kitchens_nugvoh.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736772/calgary-outdoor-kitchens_byzrwe.webp"
             alt="calgary landscaping services"
             href="/residential-services/landscape-construction/outdoor-kitchens"
             text="outdoor kitchens"
           />
           <ServiceBox
-            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659717/outdoor-furniture-landscaping-calgary_aijkyt.jpg"
+            src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736772/outdoor-furniture-landscaping-calgary_ctrdd5.webp"
             alt="calgary landscaping services"
             href="/residential-services/outdoor-living/outdoor-furniture"
             text="outdoor furniture"
