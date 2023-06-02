@@ -1,4 +1,4 @@
-import Image from "../Image/Image";
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import { Container, Section } from "../layoutComponents";
@@ -6,22 +6,12 @@ import Link from "next/link";
 import { ButtonPrimary } from "../buttons";
 import styles from "./AllServices.module.scss";
 
-import paversImg from "../../public/calgary-pavers.jpg";
-import retainingImg from "../../public/retaining-walls-landscaper-calgary.png";
-import gardenwallImg from "../../public/garden-walls-calgary-landscaping.png";
-import edgingImg from "../../public/garden-walls-calgary-landscaper.png";
-import curbingImg from "../../public/calgary-curbing.webp";
-import stairsImg from "../../public/calgary-stairs.webp";
-import seatsImg from "../../public/seat-walls-landscaper-calgary.webp";
-import concreteImg from "../../public/calgary-concrete.webp";
-import waterImg from "../../public/water-mgmt-calgary-landscaping.webp";
-
 const ServiceBox = (props) => {
   return (
     <div className={styles.item}>
       <Image
         className={styles.serviceImg}
-        height={600}
+        height={100}
         width={600}
         src={props.src}
         alt={props.alt}

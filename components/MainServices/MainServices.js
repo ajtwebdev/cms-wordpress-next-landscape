@@ -1,13 +1,10 @@
-import Image from "../Image/Image";
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import { ButtonUnderline, ButtonInline } from "../buttons";
 import { Container, Section } from "../layoutComponents";
 import Link from "next/link";
 import styles from "./MainServices.module.scss";
-import hardscapingImg from "../../public/hardscaping-calgary.webp";
-import softscapingImg from "../../public/softscaping-calgary.webp";
-import outdoorImg from "../../public/outdoor-living-calgary.webp";
 
 export default function MainServices() {
   return (
