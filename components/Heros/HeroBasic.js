@@ -32,7 +32,7 @@ export default function HeroBasic(props) {
                   width={1200}
                   height={100}
                   alt="calgary landscaping"
-                  priority={true}
+                  // priority={true}
                 />
                 {/* <div className={styles.content1} /> */}
               </div>
@@ -53,7 +53,7 @@ export default function HeroBasic(props) {
                   width={1200}
                   height={100}
                   alt="calgary landscaping"
-                  priority={true}
+                  // priority={true}
                 />
                 {/* <div className={styles.content2} /> */}
               </div>
@@ -77,7 +77,7 @@ export default function HeroBasic(props) {
                   width={1200}
                   height={100}
                   alt="calgary landscaping"
-                  priority={true}
+                  // priority={true}
                 />
                 {/* <div className={styles.content3} /> */}
               </div>
