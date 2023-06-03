@@ -28,6 +28,7 @@ const Wrapper = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  max-height: 1000px;
 `;
 
 const SliderWrapper = styled.div`

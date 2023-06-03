@@ -12,14 +12,14 @@ const ServiceBox = (props) => {
       <Image
         className={styles.serviceImg}
         height={100}
-        width={600}
+        width={300}
         src={props.src}
         alt={props.alt}
       />
       <Link className={styles.styledLink} href={props.href}>
         {props.text}
       </Link>
-      <div className="overlay"></div>
+      <div className={styles.overlay}></div>
     </div>
   );
 };

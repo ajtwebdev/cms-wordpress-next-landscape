@@ -17,8 +17,6 @@ const captionStyle = {
 };
 
 export default function HeroBasic(props) {
-  let width = "100%";
-  let height = "auto";
   return (
     <div className={styles.wrapper}>
       <div className="heroBannerPadding" />
@@ -32,9 +30,8 @@ export default function HeroBasic(props) {
                   width={1200}
                   height={100}
                   alt="calgary landscaping"
-                  // priority={true}
+                  priority={true}
                 />
-                {/* <div className={styles.content1} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -53,9 +50,8 @@ export default function HeroBasic(props) {
                   width={1200}
                   height={100}
                   alt="calgary landscaping"
-                  // priority={true}
+                  priority={true}
                 />
-                {/* <div className={styles.content2} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -77,9 +73,8 @@ export default function HeroBasic(props) {
                   width={1200}
                   height={100}
                   alt="calgary landscaping"
-                  // priority={true}
+                  priority={true}
                 />
-                {/* <div className={styles.content3} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
