@@ -51,8 +51,8 @@ export default function Index() {
       />
       <HeroBasic />
       <Badges />
-      <MainServices />
-      <AllServices />
+      {/* <MainServices />
+      <AllServices /> */}
       <Wrapper>
         <section>
           <div className="container">
