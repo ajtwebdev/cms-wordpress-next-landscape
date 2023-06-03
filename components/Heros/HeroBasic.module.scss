@@ -55,6 +55,18 @@
   }
 }
 
+.desktopImg {
+  @media screen and (max-width: 32em) {
+    display: none;
+  }
+}
+
+.mobileImg {
+  @media screen and (min-width: 32em) {
+    display: none;
+  }
+}
+
 .content1 {
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/outdoor-living-slider.webp"),
     rgba(0, 0, 0, 0);

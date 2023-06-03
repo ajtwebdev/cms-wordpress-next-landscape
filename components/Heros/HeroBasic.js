@@ -25,13 +25,23 @@ export default function HeroBasic(props) {
           <Carousel>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <Image
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                  width={1200}
-                  height={100}
-                  alt="calgary landscaping"
-                  priority={true}
-                />
+                <div className={styles.desktopImg}>
+                  <Image
+                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                    width={1200}
+                    height={100}
+                    alt="calgary landscaping"
+                    priority={true}
+                  />
+                </div>
+                <div className={styles.mobileImg}>
+                  <Image
+                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                    width={1200}
+                    height={100}
+                    alt="calgary landscaping"
+                  />
+                </div>
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -45,13 +55,23 @@ export default function HeroBasic(props) {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <Image
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                  width={1200}
-                  height={100}
-                  alt="calgary landscaping"
-                  priority={true}
-                />
+                <div className={styles.desktopImg}>
+                  <Image
+                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
+                    width={1200}
+                    height={100}
+                    alt="calgary landscaping"
+                    priority={true}
+                  />
+                </div>
+                <div className={styles.mobileImg}>
+                  <Image
+                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
+                    width={1200}
+                    height={100}
+                    alt="calgary landscaping"
+                  />
+                </div>
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -68,13 +88,23 @@ export default function HeroBasic(props) {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <Image
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                  width={1200}
-                  height={100}
-                  alt="calgary landscaping"
-                  priority={true}
-                />
+                <div className={styles.desktopImg}>
+                  <Image
+                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
+                    width={1200}
+                    height={100}
+                    alt="calgary landscaping"
+                    priority={true}
+                  />
+                </div>
+                <div className={styles.mobileImg}>
+                  <Image
+                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
+                    width={1200}
+                    height={100}
+                    alt="calgary landscaping"
+                  />
+                </div>
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
