@@ -11,8 +11,8 @@ const ServiceBox = (props) => {
     <div className={styles.item}>
       <Image
         className={styles.serviceImg}
-        height={100}
-        width={300}
+        fill={true}
+        style={{ width: "100%", height: "100%", objectFit: "cover" }}
         src={props.src}
         alt={props.alt}
       />
