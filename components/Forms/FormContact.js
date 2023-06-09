@@ -338,12 +338,12 @@ export default function FormContact(props) {
               </div>
             </div>
             <hr />
-            <div className="spacing-sm">
+            {/* <div className="spacing-sm">
               <Label htmlFor="upload">
                 Please attach your landscaping plan if you have one:
               </Label>
               <Input type="file" id="upload" name="upload" />
-            </div>
+            </div> */}
             <hr />
             <div className="spacing-sm">
               <Label htmlFor="budget">What's your budget?</Label>
