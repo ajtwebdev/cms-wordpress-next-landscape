@@ -15,10 +15,6 @@ const Text = styled.div`
   }
 `;
 
-// const StyledImg = styled(GatsbyImage)`
-//   box-shadow: -20px 20px 0px 1px var(--clr-tan);
-// `
-
 const Img = styled.div`
   figure {
     div {

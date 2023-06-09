@@ -49,10 +49,10 @@ export default function Index() {
         title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
         description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
       />
-      {/* <HeroBasic /> */}
-      {/* <Badges /> */}
-      {/* <MainServices />
-      <AllServices /> */}
+      <HeroBasic />
+      <Badges />
+      <MainServices />
+      <AllServices />
       <Wrapper>
         <section>
           <div className="container">
@@ -146,7 +146,7 @@ export default function Index() {
       <MainTrends />
       <Why />
       {/* <Ebook title="download our landscaping ebook" href="" /> */}
-      {/* <MainTestimonials /> */}
+      <MainTestimonials />
       <FaqFeatured />
       <Videos />
     </LayoutJs>

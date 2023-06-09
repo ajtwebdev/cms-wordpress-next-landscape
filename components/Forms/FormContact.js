@@ -38,9 +38,9 @@ export default function FormContact(props) {
           <form
             name="contact"
             className="spacing"
+            action="https://formspree.io/f/mjvdqzab"
             method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
+            enctype="multipart/form-data"
           >
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
@@ -339,10 +339,10 @@ export default function FormContact(props) {
             </div>
             <hr />
             <div className="spacing-sm">
-              <Label htmlFor="file">
+              <Label htmlFor="upload">
                 Please attach your landscaping plan if you have one:
               </Label>
-              <Input type="file" id="file" name="file" />
+              <Input type="file" id="upload" name="upload" />
             </div>
             <hr />
             <div className="spacing-sm">
