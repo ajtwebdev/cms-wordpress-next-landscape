@@ -37,6 +37,7 @@ const Grid = styled.div`
 `;
 
 export default function Badges() {
+  //
   const settings = {
     infinite: true,
     slidesToShow: 8,
