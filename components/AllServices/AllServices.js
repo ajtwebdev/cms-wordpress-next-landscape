@@ -7,6 +7,7 @@ import { ButtonPrimary } from "../buttons";
 import styles from "./AllServices.module.scss";
 
 const ServiceBox = (props) => {
+  //
   return (
     <div className={styles.item}>
       <Image
