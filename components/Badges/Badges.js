@@ -12,6 +12,7 @@ const ImgStyle = {
   marginBottom: "auto",
   height: "100px",
   width: "100%",
+  padding: "2em",
 };
 
 export default function Badges() {

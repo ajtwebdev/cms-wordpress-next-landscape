@@ -24,14 +24,14 @@ export default function HeroSlider({ title }) {
   return (
     <div className={styles.wrapper}>
       <div className="heroBannerPadding" />
-      <div className={styles.heroWrapper}>
-        <div className={styles.heroGrid}>
+      <div className={styles.heroGrid}>
+        <div className={styles.heroWrapper}>
           <Carousel>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
                 <Image
                   // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-1_qybaa7.webp"
                   width={1200}
                   height={100}
                   priority={true}
@@ -50,7 +50,7 @@ export default function HeroSlider({ title }) {
               <div className={styles.content}>
                 <Image
                   // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-3.webp"
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-3_c5kayc.webp"
                   width={1200}
                   height={100}
                   priority={true}
@@ -69,7 +69,7 @@ export default function HeroSlider({ title }) {
               <div className={styles.content}>
                 <Image
                   // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-1.webp"
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-2_xekffg.webp"
                   width={1200}
                   height={100}
                   priority={true}
