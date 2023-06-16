@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { Section, Container, Flex } from "../layoutComponents";
 import { Label, Input, TextArea, Submit, Select } from "./FormItems";
-import Map from "../map";
+import Map from "../Map";
 import { AnchorInline } from "../buttons";
 
 const FormWrapper = styled.div`
