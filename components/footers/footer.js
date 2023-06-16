@@ -6,8 +6,8 @@ import { Container } from "../layoutComponents";
 import { FaPhone, FaRegClock } from "react-icons/fa";
 import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
 import FormFooter from "../Forms/FormFooter";
-import Map from "../map";
-import InstagramFeed from "../instagramFeed";
+import Map from "../Map";
+import InstagramFeed from "../InstagramFeed";
 import { ButtonInline } from "../buttons";
 
 const device = {
