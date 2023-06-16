@@ -1,6 +1,6 @@
-import React from "react"
-import { Container } from "./LayoutComponents"
-import styled from "styled-components"
+import React from "react";
+import { Container } from "./layoutComponents";
+import styled from "styled-components";
 
 const Feed = styled.div`
   iframe {
@@ -14,7 +14,7 @@ const Feed = styled.div`
     border: none;
     z-index: 1000;
   }
-`
+`;
 
 export default function InstagramFeed() {
   return (
@@ -31,5 +31,5 @@ export default function InstagramFeed() {
         <hr />
       </Feed>
     </div>
-  )
+  );
 }
