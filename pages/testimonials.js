@@ -86,7 +86,7 @@ export default function Reviews() {
         img="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-3.webp"
         title="customer testimonials"
         subheader="proven success"
-        description="At Project Landscape Ltd., our premier outdoor landscaping services will increase the value and overall aesthetic of your home. We use quality brands, and unique products to help keep your lawn healthy, and your home looking incredible. This means an overall better living experience for you and your family."
+        description="Discover why Project Landscape is Calgary's top outdoor living company by reading our customer reviews. Our satisfied clients have shared their experiences and insights, providing firsthand accounts of our exceptional service, quality workmanship, and attention to detail. We take pride in delivering stunning outdoor spaces that exceed our clients' expectations. With our team of experts and commitment to customer satisfaction, you can trust Project Landscape to bring your outdoor vision to life. Don't just take our word for it – read our reviews and see why we're the trusted choice for outdoor living in Calgary."
       />
       <Section>
         <Container>

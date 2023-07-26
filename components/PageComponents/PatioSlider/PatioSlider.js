@@ -47,7 +47,7 @@ export default function PatioSlider({ title }) {
               <div className={styles.content}>
                 <Image
                   // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-2.png"
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1686787111/patios-banner-2_paupd5.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1690332721/image_1_ojcc9l.png"
                   width={1200}
                   height={100}
                   priority={true}
