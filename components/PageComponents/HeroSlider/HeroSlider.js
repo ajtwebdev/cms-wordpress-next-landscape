@@ -68,7 +68,7 @@ export default function HeroSlider({ title }) {
               <div className={styles.content}>
                 <Image
                   // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/deck-banner-1.webp"
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-2_xekffg.webp"
+                  src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/09/image-64.png"
                   width={1200}
                   height={100}
                   priority={true}

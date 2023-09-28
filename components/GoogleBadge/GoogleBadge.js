@@ -35,7 +35,7 @@ export default function GoogleBadge() {
               <FaStar style={fontStyle} />
             </div>
           </div>
-          <p className="body--small">Based on 74 reviews</p>
+          <p className="body--small">Based on 87+ reviews</p>
         </div>
       </div>
     </a>
