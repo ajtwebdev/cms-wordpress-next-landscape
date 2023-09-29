@@ -57,8 +57,8 @@ export default function ImageRight({
           <Img>
             <Image
               className="stretch"
-              alt={image.altText || ""}
-              srcSet={image.srcSet}
+              alt={image?.altText || ""}
+              srcSet={image?.srcSet}
             />
           </Img>
         </Flex>
